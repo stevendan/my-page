@@ -225,11 +225,6 @@
   <h1>📘 HSK Grammar Viewer</h1>
 
   <div class="top-bar">
-    <label class="upload-label">
-      📂 Load CSV
-      <input type="file" id="csvFile" accept=".csv">
-    </label>
-
     <input
       type="text"
       id="searchInput"
@@ -250,48 +245,17 @@
   const searchInput = document.getElementById("searchInput");
   const groupFilter = document.getElementById("groupFilter");
   const grammarContainer = document.getElementById("grammarContainer");
-  const csvFileInput = document.getElementById("csvFile");
   const quickFilter = document.getElementById("quickFilter");
 
   let allData = [];
 
   searchInput.addEventListener("input", renderCards);
   groupFilter.addEventListener("change", renderCards);
-  csvFileInput.addEventListener("change", handleFileSelect);
 
   // Tự động load grammar.csv khi mở html
   window.addEventListener("DOMContentLoaded", () => {
     loadCSV("grammar.csv");
   });
-
-  function handleFileSelect(event) {
-    const file = event.target.files[0];
-    if (!file) return;
-
-    parseCSVFile(file);
-  }
-
-  function parseCSVFile(file) {
-    Papa.parse(file, {
-      header: true,
-      skipEmptyLines: true,
-
-      complete: function(results) {
-        allData = results.data;
-        setupGroupFilter();
-        renderCards();
-      },
-
-      error: function(err) {
-        grammarContainer.innerHTML = `
-          <div class="empty">
-            Không thể đọc file CSV. Vui lòng chọn lại file hoặc mở bằng server nếu cần.
-          </div>
-        `;
-        console.error(err);
-      }
-    });
-  }
 
   function loadCSV(path) {
     // Try fetching the CSV from a few sensible relative locations (works on GitHub Pages).

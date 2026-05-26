@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HSK3 Grammar Viewer</title>
+
+  <!-- PapaParse -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: "Segoe UI", sans-serif;
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: #1f2937;
+    }
+
+    .top-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      align-items: center;
+    }
+
+    .quick-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .filter-button {
+      border: 1px solid #d0d7e2;
+      background: white;
+      color: #1f2937;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .filter-button:hover {
+      background: #eff6ff;
+      border-color: #93c5fd;
+    }
+
+    .filter-button.active {
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+    }
+
+    .search-box,
+    .filter-box {
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #d0d7e2;
+      background: white;
+      font-size: 15px;
+      min-width: 220px;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    .search-box:focus,
+    .filter-box:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
+    }
+
+    .upload-label {
+      background: #2563eb;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .upload-label:hover {
+      background: #1d4ed8;
+    }
+
+    #csvFile {
+      display: none;
+    }
+
+    .grammar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow:
+        0 4px 10px rgba(0,0,0,0.05),
+        0 1px 3px rgba(0,0,0,0.08);
+      transition: 0.25s;
+      border: 1px solid #edf1f7;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow:
+        0 10px 20px rgba(0,0,0,0.08),
+        0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .grammar-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .grammar-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111827;
+      line-height: 1.2;
+    }
+
+    .group-tag {
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .pinyin {
+      color: #6b7280;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .section {
+      margin-bottom: 12px;
+    }
+
+    .label {
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #374151;
+      font-size: 13px;
+    }
+
+    .formula {
+      background: #f3f4f6;
+      padding: 8px;
+      border-radius: 10px;
+      font-family: Consolas, monospace;
+      font-size: 14px;
+    }
+
+    .example {
+      background: #fafafa;
+      border-left: 4px solid #3b82f6;
+      padding: 8px 12px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .jp {
+      color: #7c3aed;
+      font-weight: 600;
+    }
+
+    .note {
+      color: #b45309;
+      background: #fef3c7;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .empty {
+      text-align: center;
+      padding: 40px;
+      color: #6b7280;
+      font-size: 18px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 14px;
+      }
+
+      .grammar-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grammar-text {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>📘 HSK Grammar Viewer</h1>
+
+  <div class="top-bar">
+    <label class="upload-label">
+      📂 Load CSV
+      <input type="file" id="csvFile" accept=".csv">
+    </label>
+
+    <input
+      type="text"
+      id="searchInput"
+      class="search-box"
+      placeholder="Tìm kiếm ngữ pháp..."
+    />
+
+    <select id="groupFilter" class="filter-box">
+      <option value="">Tất cả nhóm</option>
+    </select>
+  </div>
+
+  <div id="quickFilter" class="quick-filters"></div>
+
+  <div id="grammarContainer" class="grammar-grid"></div>
+
+  <script>
+  const searchInput = document.getElementById("searchInput");
+  const groupFilter = document.getElementById("groupFilter");
+  const grammarContainer = document.getElementById("grammarContainer");
+  const csvFileInput = document.getElementById("csvFile");
+  const quickFilter = document.getElementById("quickFilter");
+
+  let allData = [];
+
+  searchInput.addEventListener("input", renderCards);
+  groupFilter.addEventListener("change", renderCards);
+  csvFileInput.addEventListener("change", handleFileSelect);
+
+  // Tự động load grammar.csv khi mở html
+  window.addEventListener("DOMContentLoaded", () => {
+    loadCSV("grammar.csv");
+  });
+
+  function handleFileSelect(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    parseCSVFile(file);
+  }
+
+  function parseCSVFile(file) {
+    Papa.parse(file, {
+      header: true,
+      skipEmptyLines: true,
+
+      complete: function(results) {
+        allData = results.data;
+        setupGroupFilter();
+        renderCards();
+      },
+
+      error: function(err) {
+        grammarContainer.innerHTML = `
+          <div class="empty">
+            Không thể đọc file CSV. Vui lòng chọn lại file hoặc mở bằng server nếu cần.
+          </div>
+        `;
+        console.error(err);
+      }
+    });
+  }
+
+  function loadCSV(path) {
+    Papa.parse(path, {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+
+      complete: function(results) {
+        allData = results.data;
+
+        setupGroupFilter();
+        renderCards();
+      },
+
+      error: function(err) {
+        grammarContainer.innerHTML = `
+          <div class="empty">
+            Không thể đọc file grammar.csv <br>
+            Hãy chắc chắn file grammar.csv nằm cùng thư mục với file html <br>
+            Hoặc chọn file CSV thủ công ở trên.
+          </div>
+        `;
+
+        console.error(err);
+      }
+    });
+  }
+
+  function setupGroupFilter() {
+    const groups = [
+      ...new Set(
+        allData
+          .map(item => item["Nhóm"])
+          .filter(Boolean)
+      )
+    ];
+
+    groupFilter.innerHTML = `
+      <option value="">Tất cả nhóm</option>
+    `;
+
+    groups.forEach(group => {
+      const option = document.createElement("option");
+      option.value = group;
+      option.textContent = group;
+      groupFilter.appendChild(option);
+    });
+
+    setupQuickFilters(groups);
+  }
+
+  function setupQuickFilters(groups) {
+    const groupCounts = allData.reduce((acc, item) => {
+      const group = item["Nhóm"];
+      if (group) {
+        acc[group] = (acc[group] || 0) + 1;
+      }
+      return acc;
+    }, {});
+
+    const popularGroups = Object.entries(groupCounts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5)
+      .map(([group]) => group);
+
+    quickFilter.innerHTML = `
+      <button type="button" class="filter-button" data-group="">Tất cả</button>
+      ${popularGroups
+        .map(group => `<button type="button" class="filter-button" data-group="${group}">${group}</button>`)
+        .join("")}
+    `;
+
+    quickFilter.querySelectorAll(".filter-button").forEach(button => {
+      button.addEventListener("click", () => {
+        groupFilter.value = button.dataset.group;
+        renderCards();
+      });
+    });
+
+    updateQuickFilterButtons();
+  }
+
+  function updateQuickFilterButtons() {
+    if (!quickFilter) return;
+
+    quickFilter.querySelectorAll(".filter-button").forEach(button => {
+      button.classList.toggle("active", button.dataset.group === groupFilter.value);
+    });
+  }
+
+  function renderCards() {
+    updateQuickFilterButtons();
+
+    const keyword = searchInput.value.toLowerCase().trim();
+    const selectedGroup = groupFilter.value;
+
+    const filtered = allData.filter(item => {
+
+      const searchText = `
+        ${item["Ngữ pháp"] || ""}
+        ${item["Pinyin"] || ""}
+        ${item["Ý nghĩa / Cách dùng"] || ""}
+        ${item["Công thức"] || ""}
+        ${item["Ví dụ 1"] || ""}
+        ${item["Ví dụ 2"] || ""}
+        ${item["Ví dụ 3"] || ""}
+        ${item["Tương đương tiếng Nhật"] || ""}
+        ${item["Ghi chú"] || ""}
+      `.toLowerCase();
+
+      const matchKeyword = searchText.includes(keyword);
+
+      const matchGroup =
+        !selectedGroup ||
+        item["Nhóm"] === selectedGroup;
+
+      return matchKeyword && matchGroup;
+    });
+
+    if (filtered.length === 0) {
+      grammarContainer.innerHTML = `
+        <div class="empty">
+          Không tìm thấy ngữ pháp phù hợp
+        </div>
+      `;
+      return;
+    }
+
+    grammarContainer.innerHTML = filtered.map(item => `
+      <div class="card">
+
+        <div class="grammar-title">
+          <div class="grammar-text">
+            ${item["Ngữ pháp"] || ""}
+          </div>
+
+          <div class="group-tag">
+            ${item["Nhóm"] || ""}
+          </div>
+        </div>
+
+        <div class="pinyin">
+          ${item["Pinyin"] || ""}
+        </div>
+
+        <div class="section">
+          <div class="label">Ý nghĩa</div>
+          <div>
+            ${item["Ý nghĩa / Cách dùng"] || ""}
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="label">Công thức</div>
+          <div class="formula">
+            ${item["Công thức"] || ""}
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="label">Ví dụ</div>
+
+          <div class="example">
+            ${item["Ví dụ 1"] || ""}
+          </div>
+
+          <div class="example">
+            ${item["Ví dụ 2"] || ""}
+          </div>
+
+          <div class="example">
+            ${item["Ví dụ 3"] || ""}
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="label">Tương đương tiếng Nhật</div>
+          <div class="jp">
+            ${item["Tương đương tiếng Nhật"] || ""}
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="label">Ghi chú</div>
+          <div class="note">
+            ${item["Ghi chú"] || ""}
+          </div>
+        </div>
+
+      </div>
+    `).join("");
+  }
+</script>
+
+</body>
+</html>

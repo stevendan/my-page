@@ -294,30 +294,43 @@
   }
 
   function loadCSV(path) {
-    Papa.parse(path, {
-      download: true,
-      header: true,
-      skipEmptyLines: true,
+    // Try fetching the CSV from a few sensible relative locations (works on GitHub Pages).
+    const tryPaths = [
+      path,
+      './' + path,
+      (window.location.pathname.replace(/\/[^\/]*$/, '/') || './') + path,
+    ];
 
-      complete: function(results) {
-        allData = results.data;
+    let index = 0;
 
-        setupGroupFilter();
-        renderCards();
-      },
-
-      error: function(err) {
+    function tryFetchNext() {
+      if (index >= tryPaths.length) {
         grammarContainer.innerHTML = `
           <div class="empty">
             Không thể đọc file grammar.csv <br>
-            Hãy chắc chắn file grammar.csv nằm cùng thư mục với file html <br>
-            Hoặc chọn file CSV thủ công ở trên.
+            Hãy chắc chắn file grammar.csv nằm cùng thư mục với file html trên server (ví dụ GitHub Pages), hoặc chọn file CSV thủ công ở trên.
           </div>
         `;
-
-        console.error(err);
+        return;
       }
-    });
+
+      const url = tryPaths[index++];
+
+      fetch(url).then(resp => {
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        return resp.text();
+      }).then(text => {
+        const results = Papa.parse(text, { header: true, skipEmptyLines: true });
+        allData = results.data;
+        setupGroupFilter();
+        renderCards();
+      }).catch(err => {
+        console.warn('Failed to load CSV from', url, err);
+        tryFetchNext();
+      });
+    }
+
+    tryFetchNext();
   }
 
   function setupGroupFilter() {

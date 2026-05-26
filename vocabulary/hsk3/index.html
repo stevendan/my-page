@@ -1,7 +1,10 @@
-
-<h2 class="sr-only">Bảng từ vựng HSK 3 theo chủ đề — 600 từ với pinyin, nghĩa tiếng Việt và ghi chú kanji Nhật</h2>
-
-<style>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Từ vựng HSK 3</title>
+  <style>
 :root{
   --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --bg: var(--color-background-primary, #ffffff);
@@ -12,13 +15,14 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 body{font-family:var(--font-sans);background:var(--bg);color:var(--color-text-primary,#111827);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .wrap{max-width:1100px;margin:0 auto;padding:16px}
 .toolbar{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;align-items:center}
 .toolbar input[type="text"]{flex:1;min-width:140px;padding:10px 12px;border-radius:10px;border:1px solid rgba(0,0,0,0.08);font-size:16px;background:linear-gradient(180deg,rgba(0,0,0,0.01),transparent)}
 .toolbar select{padding:9px 10px;border-radius:10px;border:1px solid rgba(0,0,0,0.08);background:white;font-size:16px}
 .stats{font-size:13px;color:var(--muted);margin-left:auto;white-space:nowrap}
 .topic-section{margin-bottom:14px}
-.topic-header{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--color-background-secondary, #fbfdff);border-radius:10px;margin-bottom:8px;cursor:pointer;border:1px solid rgba(16,24,40,0.06);box-shadow:0 1px 0 rgba(16,24,40,0.02)}
+.topic-header{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--color-background-secondary,#fbfdff);border-radius:10px;margin-bottom:8px;cursor:pointer;border:1px solid rgba(16,24,40,0.06);box-shadow:0 1px 0 rgba(16,24,40,0.02)}
 .topic-header:hover{background:var(--color-background-tertiary,#f5f8fb)}
 .topic-name{font-size:15px;font-weight:600;color:var(--color-text-primary)}
 .topic-count{font-size:13px;color:var(--muted);margin-left:auto}
@@ -44,7 +48,6 @@ body{font-family:var(--font-sans);background:var(--bg);color:var(--color-text-pr
 .badge-ff{display:inline-block;background:#FAEEDA;color:#854F0B;font-size:11px;font-weight:600;padding:3px 7px;border-radius:999px;margin-left:6px;vertical-align:middle}
 .dark .badge-ff{background:#412402;color:#FAC775}
 .no-result{text-align:center;padding:2rem;color:var(--muted);font-size:15px}
-
 .topic-buttons{display:flex;flex-wrap:wrap;gap:8px}
 .topic-btn{padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,0.06);background:#fff;font-size:13px;cursor:pointer}
 .topic-btn.active{background:linear-gradient(180deg,#eef2ff,#e0e7ff);border-color:#c7d2fe;font-weight:600}
@@ -54,7 +57,7 @@ body{font-family:var(--font-sans);background:var(--bg);color:var(--color-text-pr
   .word-grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
 }
 
-/* Mobile — iPhone 13 (390px), iPhone 14 (393px), Android phổ thông (≤700px) */
+/* Mobile — iPhone 13 mini (375px), iPhone 13 (390px), Android phổ thông */
 @media (max-width:700px){
   .wrap{padding:12px 14px}
   .toolbar{flex-direction:column;align-items:stretch;gap:8px}
@@ -65,7 +68,6 @@ body{font-family:var(--font-sans);background:var(--bg);color:var(--color-text-pr
   .topic-header{padding:12px 14px;min-height:44px}
   .topic-name{font-size:14px}
   .topic-count{font-size:12px}
-  /* 2 cột trên mobile — tận dụng không gian ngang */
   .word-grid{grid-template-columns:repeat(2,1fr);gap:8px}
   .word-card{padding:10px 12px;gap:4px}
   .hanzi{font-size:20px}
@@ -89,8 +91,11 @@ body{font-family:var(--font-sans);background:var(--bg);color:var(--color-text-pr
 @media (max-width:320px){
   .word-grid{grid-template-columns:1fr}
 }
+  </style>
+</head>
+<body>
 
-</style>
+<h2 class="sr-only">Bảng từ vựng HSK 3 theo chủ đề — 600 từ với pinyin, nghĩa tiếng Việt và ghi chú kanji Nhật</h2>
 
 <div class="wrap">
   <div class="toolbar">
@@ -141,7 +146,6 @@ function parseCSVToObjects(text){
 
 async function loadCSVAndInit(){
   try{
-    // Try to load topic list and vocabulary in parallel. topic.csv is optional — fallback to deriving topics from vocabulary.csv
     const [topicSettled, vocabSettled] = await Promise.allSettled([fetch('topic.csv'), fetch('vocabulary.csv')]);
 
     let topicsList = null;
@@ -291,3 +295,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
   document.getElementById('jaFilter')?.addEventListener('change', render);
 });
 </script>
+
+</body>
+</html>

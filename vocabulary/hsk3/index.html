@@ -1,0 +1,267 @@
+
+<h2 class="sr-only">Bảng từ vựng HSK 3 theo chủ đề — 600 từ với pinyin, nghĩa tiếng Việt và ghi chú kanji Nhật</h2>
+
+<style>
+:root{
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --bg: var(--color-background-primary, #ffffff);
+  --card-bg: var(--color-background-primary, #fff);
+  --muted: var(--color-text-secondary, #6b7280);
+  --accent: var(--color-border-secondary, #cbd5e1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--color-text-primary,#111827);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.wrap{max-width:1100px;margin:0 auto;padding:16px}
+.toolbar{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;align-items:center}
+.toolbar input[type="text"]{flex:1;min-width:140px;padding:10px 12px;border-radius:10px;border:1px solid rgba(0,0,0,0.08);font-size:15px;background:linear-gradient(180deg,rgba(0,0,0,0.01),transparent)}
+.toolbar select{padding:9px 10px;border-radius:10px;border:1px solid rgba(0,0,0,0.08);background:white;font-size:14px}
+.stats{font-size:13px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.topic-section{margin-bottom:14px}
+.topic-header{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--color-background-secondary, #fbfdff);border-radius:10px;margin-bottom:8px;cursor:pointer;border:1px solid rgba(16,24,40,0.06);box-shadow:0 1px 0 rgba(16,24,40,0.02)}
+.topic-header:hover{background:var(--color-background-tertiary,#f5f8fb)}
+.topic-name{font-size:15px;font-weight:600;color:var(--color-text-primary)}
+.topic-count{font-size:13px;color:var(--muted);margin-left:auto}
+.topic-chevron{font-size:16px;color:var(--muted);transition:transform .22s cubic-bezier(.2,.9,.2,1)}
+.topic-chevron.open{transform:rotate(180deg)}
+.word-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.word-card{background:var(--card-bg);border:1px solid rgba(16,24,40,0.04);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;transition:transform .18s ease,box-shadow .18s ease}
+.word-card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.word-main{display:flex;align-items:baseline;gap:10px}
+.hanzi{font-size:20px;font-weight:700;color:var(--color-text-primary)}
+.pinyin{font-size:13px;color:var(--muted);font-style:italic}
+.viet{font-size:14px;color:var(--color-text-primary);margin-top:2px}
+.ja-note{font-size:12px;margin-top:6px;padding:6px 9px;border-radius:8px;line-height:1.3}
+.ja-same{background:#EAF3DE;color:#23540f}
+.ja-diff{background:#E6F1FB;color:#124b7a}
+.ja-false{background:#FFF4E6;color:#7a4a12}
+.dark .ja-same{background:#183b05;color:#cbe69a}
+.dark .ja-diff{background:#3b1910;color:#ffbca2}
+.dark .ja-false{background:#3b2a0e;color:#ffdca5}
+.badge-ff{display:inline-block;background:#FAEEDA;color:#854F0B;font-size:11px;font-weight:600;padding:3px 7px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.dark .badge-ff{background:#412402;color:#FAC775}
+.no-result{text-align:center;padding:2rem;color:var(--muted);font-size:15px}
+
+.topic-buttons{display:flex;flex-wrap:wrap;gap:8px}
+.topic-btn{padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,0.06);background:#fff;font-size:13px;cursor:pointer}
+.topic-btn.active{background:linear-gradient(180deg,#eef2ff,#e0e7ff);border-color:#c7d2fe;font-weight:600}
+
+/* Small screens */
+@media (max-width:700px){
+  .wrap{padding:12px}
+  .toolbar{flex-direction:column;align-items:stretch}
+  .toolbar input[type="text"],.toolbar select{width:100%}
+  .stats{margin-left:0;margin-top:6px}
+  .word-grid{grid-template-columns:1fr}
+  .hanzi{font-size:24px}
+  .viet{font-size:15px}
+  .topic-header{padding:12px}
+}
+
+/* Very small phones */
+@media (max-width:420px){
+  .hanzi{font-size:26px}
+  .pinyin{font-size:13px}
+  .topic-name{font-size:14px}
+  .topic-count{font-size:12px}
+}
+
+</style>
+
+<div class="wrap">
+  <div class="toolbar">
+    <input type="text" id="searchBox" placeholder="Tìm từ: hanzi, pinyin hoặc nghĩa..." />
+    <div id="topicButtons" class="topic-buttons" aria-label="Bộ lọc chủ đề"></div>
+    <select id="jaFilter">
+      <option value="">Tất cả</option>
+      <option value="same">✅ Giống tiếng Nhật</option>
+      <option value="diff">🔄 Khác nghĩa</option>
+      <option value="false">⚠️ False friend</option>
+    </select>
+    <span class="stats" id="stats"></span>
+  </div>
+  <div id="content"></div>
+</div>
+
+<script>
+let DATA = [];
+let openTopics = {};
+let selectedTopic = '';
+
+function parseCSVLine(line){
+  const res = [];
+  let cur = '', inQuotes = false;
+  for(let i=0;i<line.length;i++){
+    const ch = line[i];
+    if(ch === '"'){
+      if(inQuotes && line[i+1] === '"'){ cur += '"'; i++; }
+      else inQuotes = !inQuotes;
+    } else if(ch === ',' && !inQuotes){ res.push(cur); cur = ''; }
+    else cur += ch;
+  }
+  res.push(cur);
+  return res;
+}
+
+function parseCSVToObjects(text){
+  const lines = text.replace(/\r/g,'').split('\n').filter(l=>l.trim()!=='');
+  if(!lines.length) return [];
+  const header = parseCSVLine(lines.shift()).map(h=>h.trim());
+  return lines.map(l=>{
+    const cols = parseCSVLine(l);
+    const obj = {};
+    header.forEach((h,i)=> obj[h] = (cols[i]!==undefined) ? cols[i] : '');
+    return obj;
+  });
+}
+
+async function loadCSVAndInit(){
+  try{
+    // Try to load topic list and vocabulary in parallel. topic.csv is optional — fallback to deriving topics from vocabulary.csv
+    const [topicSettled, vocabSettled] = await Promise.allSettled([fetch('topic.csv'), fetch('vocabulary.csv')]);
+
+    let topicsList = null;
+    if(topicSettled.status === 'fulfilled' && topicSettled.value.ok){
+      try{
+        const ttxt = await topicSettled.value.text();
+        const trows = parseCSVToObjects(ttxt);
+        topicsList = trows.map(r=>r.topic).filter(Boolean);
+      }catch(e){ console.warn('Failed parsing topic.csv', e); }
+    }
+
+    if(vocabSettled.status !== 'fulfilled' || !vocabSettled.value.ok) throw new Error('vocabulary.csv not found');
+    const vtxt = await vocabSettled.value.text();
+    const rows = parseCSVToObjects(vtxt);
+    const map = new Map();
+    rows.forEach(r=>{
+      const topic = r.topic || 'Chung';
+      if(!map.has(topic)) map.set(topic, {topic, words:[]});
+      map.get(topic).words.push({h:r.h || '', p:r.p || '', v:r.v || '', ja:r.ja || '', jt:r.jt || ''});
+    });
+    DATA = Array.from(map.values());
+
+    const sourceTopics = Array.isArray(topicsList) && topicsList.length ? topicsList : DATA.map(d=>d.topic);
+    sourceTopics.forEach(t => { openTopics[t] = true; });
+    buildTopicButtons(sourceTopics);
+    render();
+  }catch(e){
+    console.error('Failed to load CSV', e);
+    const content = document.getElementById('content');
+    content.innerHTML = '<div class="no-result">Không thể tải vocabulary.csv. Nếu bạn mở file trực tiếp, hãy chạy một server tĩnh (python -m http.server) và mở qua http://localhost:8000</div>';
+  }
+}
+
+function buildTopicButtons(topicsArray){
+  const container = document.getElementById('topicButtons');
+  if(!container) return;
+  container.innerHTML = '';
+  function addButton(label, val){
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'topic-btn' + (selectedTopic === val ? ' active' : '');
+    btn.textContent = label;
+    btn.dataset.topic = val;
+    btn.addEventListener('click', ()=>{
+      selectedTopic = val || '';
+      container.querySelectorAll('.topic-btn').forEach(b=> b.classList.toggle('active', b.dataset.topic === (selectedTopic || '')));
+      render();
+    });
+    container.appendChild(btn);
+  }
+  addButton('Tất cả','');
+  if(Array.isArray(topicsArray) && topicsArray.length){
+    topicsArray.forEach(t=> addButton(t, t));
+    return;
+  }
+  DATA.forEach(t=> addButton(t.topic, t.topic));
+}
+
+function getJaBadge(jt){
+  if(!jt) return '';
+  if(jt==='same') return '<span class="badge-ff" style="background:#EAF3DE;color:#3B6D11">✅ Giống JP</span>';
+  if(jt==='diff') return '<span class="badge-ff" style="background:#E6F1FB;color:#185FA5">🔄 Khác JP</span>';
+  if(jt==='false') return '<span class="badge-ff">⚠️ False Friend</span>';
+  return '';
+}
+
+function getJaNote(w){
+  if(!w.ja) return '';
+  let cls = w.jt==='same'?'ja-same':w.jt==='false'?'ja-false':'ja-diff';
+  return `<div class="ja-note ${cls}">🇯🇵 ${w.ja}</div>`;
+}
+
+function render(){
+  const qRaw = document.getElementById('searchBox')?.value || '';
+  const q = qRaw.toLowerCase().trim();
+  const tf = selectedTopic || '';
+  const jf = document.getElementById('jaFilter')?.value;
+
+  let total=0, shown=0;
+  const content = document.getElementById('content');
+  content.innerHTML='';
+
+  DATA.forEach(topic=>{
+    if(tf && tf!==topic.topic) return;
+    const words = (topic.words||[]).filter(w=>{
+      const h = (w.h||'').toString();
+      const p = (w.p||'').toString().toLowerCase();
+      const v = (w.v||'').toString().toLowerCase();
+      if(q && !h.includes(q) && !p.includes(q) && !v.includes(q)) return false;
+      if(jf==='same' && w.jt!=='same') return false;
+      if(jf==='diff' && w.jt!=='diff') return false;
+      if(jf==='false' && w.jt!=='false') return false;
+      return true;
+    });
+    total += (topic.words||[]).length;
+    if(!words.length) return;
+    shown += words.length;
+
+    const sec = document.createElement('div');
+    sec.className='topic-section';
+    const isOpen = openTopics[topic.topic]!==false;
+    sec.innerHTML=`
+      <div class="topic-header" onclick="toggle(this,'${topic.topic.replace(/'/g,"\\'") }')">
+        <span class="topic-name">${topic.topic}</span>
+        <span class="topic-count">${words.length} từ</span>
+        <i class="ti ti-chevron-down topic-chevron ${isOpen?'open':''}" aria-hidden="true"></i>
+      </div>
+      <div class="word-grid" style="display:${isOpen?'grid':'none'}">
+        ${words.map(w=>`
+          <div class="word-card">
+            <div class="word-main">
+              <span class="hanzi">${w.h}</span>
+              <span class="pinyin">${w.p}</span>
+              ${getJaBadge(w.jt)}
+            </div>
+            <div class="viet">${w.v}</div>
+            ${getJaNote(w)}
+          </div>
+        `).join('')}
+      </div>`;
+    content.appendChild(sec);
+  });
+
+  const statsEl = document.getElementById('stats');
+  if(q||tf||jf) statsEl.textContent = `Hiện ${shown} từ`;
+  else statsEl.textContent = `${total} từ / ${DATA.length} chủ đề`;
+
+  if(!content.children.length){
+    content.innerHTML='<div class="no-result"><i class="ti ti-search" style="font-size:24px;display:block;margin-bottom:8px" aria-hidden="true"></i>Không tìm thấy từ nào</div>';
+  }
+}
+
+function toggle(header, topicName){
+  const grid = header.nextElementSibling;
+  const chevron = header.querySelector('.topic-chevron');
+  const isOpen = grid.style.display!=='none';
+  grid.style.display = isOpen?'none':'grid';
+  chevron.classList.toggle('open', !isOpen);
+  openTopics[topicName] = !isOpen;
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  loadCSVAndInit();
+  document.getElementById('searchBox')?.addEventListener('input', render);
+  document.getElementById('jaFilter')?.addEventListener('change', render);
+});
+</script>

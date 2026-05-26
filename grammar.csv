@@ -1,0 +1,56 @@
+﻿No,Bài,Nhóm,Ngữ pháp,Pinyin,Ý nghĩa / Cách dùng,Công thức,Ví dụ 1,Ví dụ 2,Ví dụ 3,Tương đương tiếng Nhật,Ghi chú
+1,1,Phó từ,一直,yìzhí,"luôn luôn, liên tục",一直 + V,我一直等你。,他一直在这里工作。(Anh ấy làm việc ở đây suốt.),我一直喜欢中文。(Tôi luôn thích tiếng Trung.),ずっと,Nhấn mạnh kéo dài liên tục
+2,1,Phó từ,总是,zǒngshì,lúc nào cũng,总是 + V,她总是迟到。,他总是忘记带手机。(Anh ấy lúc nào cũng quên mang điện thoại.),妹妹总是很开心。(Em gái tôi lúc nào cũng vui vẻ.),いつも,Nhấn mạnh tần suất
+3,1,Phó từ,一向,yíxiàng,từ trước đến giờ,一向 + Adj/V,我一向不喝酒。,她一向很认真。(Cô ấy từ trước đến giờ rất nghiêm túc.),我一向早睡早起。(Tôi trước giờ luôn ngủ sớm dậy sớm.),前からずっと,Thói quen ổn định lâu dài
+4,1,Phủ định,一…也/都不,yí…yě/dōu bù,hoàn toàn không,一 + CL + N + 也/都不,我一点儿也不累。,我一点儿也不饿。(Tôi hoàn toàn không đói.),他什么都不想吃。(Anh ấy chẳng muốn ăn gì cả.),全然～ない,Phủ định mạnh
+5,1,Liên từ,那,nà,vậy thì,那 + clause,那我去吧。,那我们开始吧。(Vậy thì chúng ta bắt đầu nhé.),那你早点休息。(Vậy bạn nghỉ ngơi sớm nhé.),じゃあ,Dùng khi phản hồi
+6,1,Bổ ngữ kết quả,好,hǎo,làm xong / chuẩn bị xong,V + 好,我准备好了。,饭已经做好了。(Cơm đã nấu xong rồi.),你写好了吗？(Bạn viết xong chưa?),～しておく / ～終わる,好 biểu thị hoàn thành
+7,2,Thời gian,就,jiù,đã / liền,时间 + 就 + V,他六点就来了。,我七点就起床了。(Tôi đã dậy từ 7 giờ.),他一下课就回家。(Anh ấy tan học là về nhà ngay.),もう / すぐ,Hàm ý sớm
+8,2,Thời gian,才,cái,mới,时间 + 才 + V,他十点才睡。,我昨天十二点才睡。(Hôm qua tôi tận 12 giờ mới ngủ.),他现在才来。(Bây giờ anh ấy mới tới.),やっと,Hàm ý muộn
+9,2,Phó từ,又,yòu,lại,又 + V,他又来了。,今天又下雨了。(Hôm nay lại mưa nữa rồi.),他又买了一本书。(Anh ấy lại mua thêm một quyển sách.),また,Sự việc lặp lại
+10,2,Phó từ,再,zài,lại nữa,再 + V,请再说一次。,请再等一下。(Xin hãy đợi thêm chút nữa.),我想再去一次中国。(Tôi muốn lại đi Trung Quốc một lần nữa.),もう一度,Thường cho tương lai
+11,2,Số lượng,一点儿,yìdiǎnr,một chút,Adj + 一点儿,便宜一点儿。,请慢一点儿说。(Xin nói chậm một chút.),这个包便宜一点儿。(Cái túi này rẻ hơn một chút.),少し,Mức độ nhẹ
+12,2,Số lượng,有一点儿,yǒu yìdiǎnr,hơi…,有一点儿 + Adj,我有一点儿累。,我今天有一点儿忙。(Hôm nay tôi hơi bận.),这件衣服有一点儿贵。(Bộ quần áo này hơi đắt.),少し,Thường nghĩa tiêu cực
+13,3,So sánh,比,bǐ,hơn,A 比 B + Adj,我比你高。,今天比昨天热。(Hôm nay nóng hơn hôm qua.),我比哥哥高。(Tôi cao hơn anh trai.),～より,So sánh cơ bản
+14,3,So sánh,没有,méiyǒu,không bằng,A 没有 B + Adj,我没有他高。,我的中文没有你好。(Tiếng Trung của tôi không tốt bằng bạn.),今天没有昨天冷。(Hôm nay không lạnh bằng hôm qua.),～ほどではない,Phủ định so sánh
+15,3,So sánh,更,gèng,càng hơn,更 + Adj,今天更冷。,他今天更高兴。(Hôm nay anh ấy còn vui hơn.),我想更努力学习。(Tôi muốn học chăm chỉ hơn nữa.),もっと,Mức độ tăng
+16,3,So sánh,最,zuì,nhất,最 + Adj,她最好。,她是我们班最漂亮的人。(Cô ấy là người đẹp nhất lớp tôi.),我最喜欢春天。(Tôi thích mùa xuân nhất.),一番,So sánh cao nhất
+17,4,Bổ ngữ kết quả,看见,kànjiàn,nhìn thấy,看 + 见,我看见他了。,我刚才看见老师了。(Vừa rồi tôi nhìn thấy giáo viên.),你看见我的电脑了吗？(Bạn có thấy máy tính của tôi không?),見える,Kết quả hành động
+18,4,Bổ ngữ kết quả,听懂,tīngdǒng,nghe hiểu,听 + 懂,我没听懂。,我听懂了老师的话。(Tôi đã nghe hiểu lời giáo viên.),他说得太快，我没听懂。(Anh ấy nói nhanh quá nên tôi không nghe hiểu.),聞き取れる,懂 = hiểu
+19,4,Bổ ngữ kết quả,找到,zhǎodào,tìm thấy,找 + 到,我找到钥匙了。,我终于找到工作了。(Cuối cùng tôi đã tìm được việc.),你找到钱包了吗？(Bạn tìm thấy ví chưa?),見つける,到 = đạt được
+20,4,Bổ ngữ kết quả,做完,zuòwán,làm xong,做 + 完,我做完作业了。,我已经做完了。(Tôi đã làm xong rồi.),她晚上才做完作业。(Tối cô ấy mới làm xong bài tập.),～終わる,完 = hoàn tất
+21,5,Khả năng,能,néng,có thể,能 + V,我能去。,明天我不能来。(Ngày mai tôi không thể tới.),你能帮我吗？(Bạn có thể giúp tôi không?),～できる,Khả năng khách quan
+22,5,Khả năng,可以,kěyǐ,có thể / được phép,可以 + V,我可以进来吗？,这里可以停车吗？(Ở đây có thể đỗ xe không?),你可以坐这里。(Bạn có thể ngồi đây.),～してもいい,Có thể dùng xin phép
+23,5,Khả năng,会,huì,biết làm,会 + V,我会游泳。,我会开车。(Tôi biết lái xe.),她会说日语。(Cô ấy biết nói tiếng Nhật.),～できる,Kỹ năng học được
+24,5,Khả năng,得了 / 不了,déliǎo / bùliǎo,làm nổi / không nổi,V 得了/不了,我吃不了。,这么多饭，我吃不了。(Nhiều cơm thế này tôi ăn không nổi.),这个箱子太重了，我拿不了。(Cái vali này nặng quá tôi không mang nổi.),～できない,Khả năng thực tế
+25,6,Xu hướng,来 / 去,lái / qù,tới / đi,V + 来/去,走进去。,他跑进去了吗？(Anh ấy chạy vào rồi à?),请拿过去给老师。(Hãy mang qua cho giáo viên.),～てくる / ～ていく,Xu hướng di chuyển
+26,6,Xu hướng,上来,shànglái,đi lên đây,V + 上来,他跑上来了。,快上来吧！(Mau lên đây đi!),他慢慢走上来了。(Anh ấy từ từ đi lên đây.),上がってくる,Hướng về người nói
+27,6,Xu hướng,下去,xiàqù,đi xuống / tiếp tục,V + 下去,说下去。,请继续说下去。(Xin hãy tiếp tục nói.),他走下去了。(Anh ấy đi xuống rồi.),続ける,Có thể chỉ tiếp diễn
+28,6,Xu hướng,出来,chūlái,đi ra đây,V + 出来,请拿出来。,他从房间里走出来。(Anh ấy đi ra từ trong phòng.),请把照片拿出来。(Hãy lấy ảnh ra.),出してくる,来 = hướng gần
+29,6,Xu hướng,回去,huíqù,quay về,V + 回去,你回去吧。,我明天回去。(Ngày mai tôi quay về.),"太晚了，你快回去吧。(Muộn quá rồi, bạn mau về đi.)",戻っていく,去 = xa người nói
+30,7,Câu chữ 把,把,bǎ,xử lý tân ngữ,把 + O + V,请把门打开。,请把窗户关上。(Hãy đóng cửa sổ lại.),我把书放在桌子上了。(Tôi đã đặt sách lên bàn.),～を～する,Nhấn mạnh kết quả
+31,7,Câu chữ 把,把…完,bǎ…wán,làm xong cái gì,把 + O + V完,我把饭吃完了。,他把咖啡喝完了。(Anh ấy uống hết cà phê rồi.),请把这个写完。(Hãy viết xong cái này.),～を食べ終わる,Rất phổ biến
+32,8,Bị động,被,bèi,bị,A 被 B + V,手机被偷了。,我的自行车被别人骑走了。(Xe đạp của tôi bị người khác đi mất rồi.),他被老师批评了。(Anh ấy bị giáo viên phê bình.),～られる,Thường sắc thái xấu
+33,9,Liên từ,因为…所以…,yīnwèi…suǒyǐ…,vì… nên…,因为A，所以B,因为下雨，所以没去。,因为太忙，所以没去。(Vì quá bận nên không đi.),因为生病，所以请假了。(Vì bị bệnh nên đã xin nghỉ.),～ので,Logic nguyên nhân
+34,9,Liên từ,虽然…但是…,suīrán…dànshì…,tuy… nhưng…,虽然A，但是B,虽然很忙，但是很开心。,虽然很累，但是我很开心。(Tuy rất mệt nhưng tôi rất vui.),虽然下雨，但是我们还是去了。(Tuy mưa nhưng chúng tôi vẫn đi.),～けど,Tương phản
+35,9,Liên từ,如果…就…,rúguǒ…jiù…,nếu… thì…,如果A，就B,如果有空就来。,如果明天下雨，我就不去。(Nếu mai mưa thì tôi không đi.),如果你想学，我就教你。(Nếu bạn muốn học thì tôi sẽ dạy bạn.),もし～なら,Điều kiện
+36,9,Liên từ,一边…一边…,yìbiān…yìbiān…,vừa… vừa…,一边A，一边B,一边吃一边看。,他一边听音乐，一边学习。(Anh ấy vừa nghe nhạc vừa học.),妈妈一边做饭，一边唱歌。(Mẹ vừa nấu ăn vừa hát.),～ながら,Đồng thời
+37,9,So sánh,跟…一样,gēn…yíyàng,giống như,A 跟 B 一样,他跟我一样高。,我的手机跟你的一样。(Điện thoại của tôi giống của bạn.),今天跟昨天一样热。(Hôm nay nóng giống hôm qua.),～と同じ,So sánh ngang bằng
+38,10,Tiếp diễn,正在,zhèngzài,đang,正在 + V,我正在学习。,她正在看电视。(Cô ấy đang xem TV.),我正在吃饭。(Tôi đang ăn cơm.),～しているところ,Nhấn mạnh hiện tại
+39,10,Trạng thái,着,zhe,trạng thái duy trì,V着,门开着。,他穿着一件黑衣服。(Anh ấy đang mặc áo màu đen.),门开着呢。(Cửa đang mở.),～ている,Trạng thái sau hành động
+40,10,Kinh nghiệm,过,guò,đã từng,V过,我去过北京。,我吃过北京烤鸭。(Tôi từng ăn vịt quay Bắc Kinh.),你去过上海吗？(Bạn từng đi Thượng Hải chưa?),～たことがある,Kinh nghiệm
+41,11,Nhấn mạnh,是…的,shì…de,nhấn mạnh thời gian/cách thức,是…的,我是在北京认识他的。,我是在网上买的。(Tôi mua trên mạng đó.),他是昨天来的。(Anh ấy là tới hôm qua.),～のは…だ,Rất quan trọng
+42,11,Nhấn mạnh,连…都…,lián…dōu…,ngay cả… cũng,连A都B,连孩子都知道。,连老师都不知道。(Ngay cả giáo viên cũng không biết.),连我妈妈都喜欢这首歌。(Ngay cả mẹ tôi cũng thích bài hát này.),～さえ,Nhấn mạnh cực đoan
+43,12,Vị trí,在,zài,ở / đang ở,在 + địa điểm,我在家。,他现在在公司。(Anh ấy hiện ở công ty.),我在图书馆学习。(Tôi học ở thư viện.),～にいる,Cơ bản
+44,12,Khoảng cách,离,lí,cách,A离B + Adj,我家离学校很近。,我家离地铁站很远。(Nhà tôi cách ga tàu điện rất xa.),公司离这里近吗？(Công ty có gần đây không?),～から,Khoảng cách
+45,12,Phạm vi,从…到…,cóng…dào…,từ… đến…,从A到B,从北京到上海。,从星期一到星期五都上班。(Từ thứ hai đến thứ sáu đều đi làm.),从这里到机场要一个小时。(Từ đây đến sân bay mất 1 tiếng.),～から～まで,Phạm vi
+46,13,Bổ ngữ trình độ,得,de,làm một cách…,V得 + Adj,他说得很快。,他跑得很快。(Anh ấy chạy rất nhanh.),你写得很好。(Bạn viết rất tốt.),～く,Đánh giá hành động
+47,13,Mức độ,极了,jíle,cực kỳ,Adj + 极了,漂亮极了。,今天热极了。(Hôm nay nóng cực kỳ.),这个菜好吃极了。(Món này ngon cực kỳ.),とても,Khẩu ngữ mạnh
+48,13,Mức độ,太…了,tài…le,quá… rồi,太Adj了,太贵了。,今天太忙了。(Hôm nay bận quá.),这个问题太难了。(Vấn đề này khó quá.),～すぎる,Thường cảm thán
+49,14,Số lượng,多,duō,hơn / trên,数字 + 多,十多个人。,我们班有二十多个人。(Lớp tôi có hơn 20 người.),他学了三年多中文。(Anh ấy học tiếng Trung hơn 3 năm.),～以上,Ước lượng
+50,14,Số lượng,几,jǐ,vài,几 + CL + N,几个人。,桌子上有几个苹果。(Trên bàn có vài quả táo.),我认识几个人。(Tôi quen vài người.),いくつ,Số lượng ít
+51,15,Liên động,先…然后…,xiān…ránhòu…,trước… rồi…,先A，然后B,先吃饭，然后学习。,先洗手，然后吃饭。(Trước rửa tay rồi ăn cơm.),我先回家，然后去超市。(Tôi về nhà trước rồi đi siêu thị.),まず～それから,Trình tự hành động
+52,15,Trạng thái,越来越…,yuèláiyuè…,càng ngày càng,越来越 + Adj,天气越来越冷。,她越来越漂亮了。(Cô ấy càng ngày càng đẹp.),中文越来越难。(Tiếng Trung càng ngày càng khó.),ますます,Biến đổi tăng dần
+53,15,Mục đích,为了,wèile,để / vì,为了 + mục đích,为了考试，我学习。,"为了孩子，他很努力工作。(Vì con cái, anh ấy làm việc rất chăm.)","为了健康，我每天运动。(Để khỏe mạnh, tôi tập thể dục mỗi ngày.)",～のために,Chỉ mục đích
+54,16,Liên từ,只要……，就……,zhǐyào……jiù……,miễn là… thì…,只要 + 条件， 就 + 结果,只要你努力，就会成功。,只要天气好，我们就去公园。,只要你来了，我就高兴。,〜さえ〜ば/〜すれば,Diễn đạt điều kiện đủ; nhấn mạnh miễn là điều kiện được đáp ứng thì kết quả sẽ xảy ra
+55,16,Giới từ,关于,guānyú,về / liên quan đến,关于 + 名词/短语,关于这个问题，我们需要讨论。,他写了一封关于学习汉语的信。,关于你的建议，我会考虑。,〜について/〜に関して,Đứng trước chủ đề hoặc vấn đề; thường dùng trong văn viết và trao đổi chính thức

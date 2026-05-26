@@ -25,13 +25,15 @@ body{font-family:var(--font-sans);background:var(--bg);color:var(--color-text-pr
 .topic-chevron{font-size:16px;color:var(--muted);transition:transform .22s cubic-bezier(.2,.9,.2,1)}
 .topic-chevron.open{transform:rotate(180deg)}
 .word-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
-.word-card{background:var(--card-bg);border:1px solid rgba(16,24,40,0.04);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;transition:transform .18s ease,box-shadow .18s ease}
-.word-card:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(16,24,40,0.06)}
-.word-main{display:flex;align-items:baseline;gap:10px}
-.hanzi{font-size:20px;font-weight:700;color:var(--color-text-primary)}
+.word-card{background:var(--card-bg);border:1px solid rgba(16,24,40,0.09);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:5px;box-shadow:0 1px 3px rgba(16,24,40,0.05);transition:transform .18s ease,box-shadow .18s ease}
+.word-card:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(16,24,40,0.10)}
+.word-header{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.hanzi{font-size:22px;font-weight:700;color:var(--color-text-primary)}
 .pinyin{font-size:13px;color:var(--muted);font-style:italic}
-.viet{font-size:14px;color:var(--color-text-primary);margin-top:2px}
-.han-viet{font-size:12px;color:var(--muted);margin-top:4px;font-style:italic}
+.card-divider{border:none;border-top:1px solid rgba(16,24,40,0.07);margin:3px 0}
+.viet{font-size:15px;font-weight:500;color:var(--color-text-primary)}
+.han-viet{font-size:12px;color:#4f46e5;font-weight:600;letter-spacing:.01em}
+.dark .han-viet{color:#818cf8}
 .ja-same{background:#EAF3DE;color:#23540f}
 .ja-diff{background:#E6F1FB;color:#124b7a}
 .ja-false{background:#FFF4E6;color:#7a4a12}
@@ -53,8 +55,8 @@ body{font-family:var(--font-sans);background:var(--bg);color:var(--color-text-pr
   .toolbar input[type="text"],.toolbar select{width:100%}
   .stats{margin-left:0;margin-top:6px}
   .word-grid{grid-template-columns:1fr}
-  .hanzi{font-size:24px}
-  .viet{font-size:15px}
+  .hanzi{font-size:26px}
+  .viet{font-size:16px}
   .topic-header{padding:12px}
 }
 
@@ -228,12 +230,15 @@ function render(){
       <div class="word-grid" style="display:${isOpen?'grid':'none'}">
         ${words.map(w=>`
           <div class="word-card">
-            <div class="word-main">
+            <div class="word-header">
               <span class="hanzi">${w.h}</span>
-              <span class="pinyin">${w.p}</span>
               ${getJaBadge(w.jt)}
             </div>
-            <div class="viet">${w.v}</div>            ${w.hv ? `<div class="han-viet">Hán Việt: ${w.hv}</div>` : ''}            ${getJaNote(w)}
+            <div class="pinyin">${w.p}</div>
+            <hr class="card-divider">
+            <div class="viet">${w.v}</div>
+            ${w.hv ? `<div class="han-viet">[${w.hv}]</div>` : ''}
+            ${getJaNote(w)}
           </div>
         `).join('')}
       </div>`;

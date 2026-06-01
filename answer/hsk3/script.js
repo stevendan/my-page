@@ -1,10 +1,5 @@
-const searchBox = document.getElementById('searchBox');
 const content = document.getElementById('content');
-const lessonSelect = document.getElementById('lessonSelect');
 const quickLessons = document.getElementById('quickLessons');
-const prevLessonBtn = document.getElementById('prevLesson');
-const nextLessonBtn = document.getElementById('nextLesson');
-const goLessonBtn = document.getElementById('goLesson');
 const backToTopBtn = document.getElementById('backToTop');
 
 let rawText = '';
@@ -234,10 +229,6 @@ function renderContent(keyword = '') {
 }
 
 function renderLessonOptions() {
-    lessonSelect.innerHTML = lessonNumbers
-        .map((n) => `<option value="${n}">Bài ${n}: ${escapeHtml(lessonMap.get(n) || '')}</option>`)
-        .join('');
-
     quickLessons.innerHTML = lessonNumbers
         .map((n) => `<button type="button" class="quick-lesson" data-lesson="${n}">${n}</button>`)
         .join('');
@@ -246,13 +237,9 @@ function renderLessonOptions() {
 function setCurrentLesson(lessonNumber) {
     if (!lessonNumbers.includes(lessonNumber)) return;
     currentLesson = lessonNumber;
-    lessonSelect.value = String(lessonNumber);
     document.querySelectorAll('.quick-lesson').forEach((btn) => {
         btn.classList.toggle('active', Number(btn.dataset.lesson) === lessonNumber);
     });
-    const idx = lessonNumbers.indexOf(lessonNumber);
-    prevLessonBtn.disabled = idx <= 0;
-    nextLessonBtn.disabled = idx >= lessonNumbers.length - 1;
 }
 
 function goToLesson(lessonNumber, smooth = true) {
@@ -284,33 +271,10 @@ fetch('content.html')
 
 // ── Event listeners ───────────────────────────────────────────
 
-searchBox.addEventListener('input', function () {
-    renderContent(this.value.trim());
-    setCurrentLesson(currentLesson);
-});
-
-lessonSelect.addEventListener('change', function () {
-    goToLesson(Number(this.value));
-});
-
-goLessonBtn.addEventListener('click', function () {
-    goToLesson(Number(lessonSelect.value));
-});
-
 quickLessons.addEventListener('click', function (event) {
     const target = event.target.closest('.quick-lesson');
     if (!target) return;
     goToLesson(Number(target.dataset.lesson));
-});
-
-prevLessonBtn.addEventListener('click', function () {
-    const idx = lessonNumbers.indexOf(currentLesson);
-    if (idx > 0) goToLesson(lessonNumbers[idx - 1]);
-});
-
-nextLessonBtn.addEventListener('click', function () {
-    const idx = lessonNumbers.indexOf(currentLesson);
-    if (idx < lessonNumbers.length - 1) goToLesson(lessonNumbers[idx + 1]);
 });
 
 window.addEventListener('scroll', function () {

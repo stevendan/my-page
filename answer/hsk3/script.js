@@ -7,20 +7,10 @@ const nextLessonBtn = document.getElementById('nextLesson');
 const goLessonBtn = document.getElementById('goLesson');
 const backToTopBtn = document.getElementById('backToTop');
 
-const rawText = content.textContent.replace(/^﻿/, '');
-const lessonMap = new Map();
-const lessonRegex = /第\s*(\d{1,2})课[^\n]*/g;
-let lessonMatch;
-
-while ((lessonMatch = lessonRegex.exec(rawText)) !== null) {
-    const lessonNumber = Number(lessonMatch[1]);
-    if (lessonNumber >= 1 && lessonNumber <= 20 && !lessonMap.has(lessonNumber)) {
-        lessonMap.set(lessonNumber, lessonMatch[0].trim());
-    }
-}
-
-const lessonNumbers = Array.from(lessonMap.keys()).sort((a, b) => a - b);
-let currentLesson = lessonNumbers[0] || 1;
+let rawText = '';
+let lessonMap = new Map();
+let lessonNumbers = [];
+let currentLesson = 1;
 
 function escapeHtml(text) {
     return text
@@ -235,9 +225,29 @@ function goToLesson(lessonNumber, smooth = true) {
     }
 }
 
-renderContent('');
-renderLessonOptions();
-setCurrentLesson(currentLesson);
+function init(text) {
+    rawText = text.replace(/^﻿/, '');
+
+    const lessonRegex = /第\s*(\d{1,2})课[^\n]*/g;
+    let lessonMatch;
+    while ((lessonMatch = lessonRegex.exec(rawText)) !== null) {
+        const lessonNumber = Number(lessonMatch[1]);
+        if (lessonNumber >= 1 && lessonNumber <= 20 && !lessonMap.has(lessonNumber)) {
+            lessonMap.set(lessonNumber, lessonMatch[0].trim());
+        }
+    }
+
+    lessonNumbers = Array.from(lessonMap.keys()).sort((a, b) => a - b);
+    currentLesson = lessonNumbers[0] || 1;
+
+    renderContent('');
+    renderLessonOptions();
+    setCurrentLesson(currentLesson);
+}
+
+fetch('content.html')
+    .then((r) => r.text())
+    .then((text) => init(text));
 
 searchBox.addEventListener('input', function () {
     renderContent(this.value.trim());

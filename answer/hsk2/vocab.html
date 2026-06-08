@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HSK 3 — Từ vựng</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .vocab-content h1 { margin: 0 0 6px; font-size: 22px; }
+    .vocab-content h2 {
+        color: var(--primary-strong);
+        font-size: 16px;
+        font-weight: 700;
+        padding: 6px 12px;
+        border-radius: 9px;
+        background: linear-gradient(90deg, #e8f2ff, #f6faff);
+        border-left: 4px solid #2f72be;
+        margin: 20px 0 10px;
+    }
+    .vocab-content blockquote {
+        border-left: 3px solid var(--border);
+        margin: 0 0 12px;
+        padding: 6px 14px;
+        color: var(--muted);
+        font-size: 14px;
+        background: #f9fcff;
+        border-radius: 0 8px 8px 0;
+    }
+    .vocab-content blockquote p { margin: 2px 0; }
+    .vocab-content hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+    .vocab-content table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    .vocab-content th {
+        background: #e8f2ff;
+        color: var(--primary-strong);
+        font-weight: 700;
+        padding: 8px 10px;
+        border: 1px solid var(--border);
+        text-align: left;
+    }
+    .vocab-content td {
+        padding: 7px 10px;
+        border: 1px solid var(--border);
+        vertical-align: top;
+        line-height: 1.55;
+    }
+    .vocab-content tr:nth-child(even) td { background: #f7fbff; }
+    .vocab-content tr:hover td { background: #eef5ff; }
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        padding: 6px 12px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: #fff;
+        transition: background 0.2s, border-color 0.2s;
+    }
+    .back-link:hover { background: #eef5ff; border-color: #bfd2ea; }
+    #loading { color: var(--muted); font-size: 15px; padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back-link">← Đáp án bài tập</a>
+    <div class="content-wrap">
+        <div id="loading">Đang tải từ vựng…</div>
+        <div id="vocab-output" class="vocab-content" hidden></div>
+    </div>
+</div>
+
+<button id="backToTop" class="floating-top" type="button" aria-label="Lên đầu trang">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    fetch('vocab.md')
+        .then(r => r.text())
+        .then(md => {
+            const output = document.getElementById('vocab-output');
+            output.innerHTML = marked.parse(md);
+            document.getElementById('loading').remove();
+            output.removeAttribute('hidden');
+        })
+        .catch(() => {
+            document.getElementById('loading').textContent = 'Không tải được vocab.md.';
+        });
+
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        backToTopBtn.classList.toggle('show', window.scrollY > 300);
+    });
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

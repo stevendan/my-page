@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đáp án bài tập HSK2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Đáp án bài tập HSK2</h1>
+    <div style="text-align:center;margin-bottom:14px">
+        <a href="vocab.html" style="display:inline-flex;align-items:center;gap:6px;color:var(--primary);text-decoration:none;font-size:14px;font-weight:600;padding:6px 14px;border:1px solid var(--border);border-radius:8px;background:#fff;transition:background 0.2s,border-color 0.2s" onmouseover="this.style.background='#eef5ff';this.style.borderColor='#bfd2ea'" onmouseout="this.style.background='#fff';this.style.borderColor='var(--border)'">📖 Danh sách từ vựng</a>
+    </div>
+    <div id="quickLessons" class="quick-lessons" aria-label="Chọn nhanh bài học"></div>
+    <div class="content-wrap">
+        <div id="content"></div>
+    </div>
+</div>
+
+<button id="backToTop" class="floating-top" type="button" aria-label="Lên đầu trang">↑</button>
+
+<!-- Footer audio player (sticky bottom, like reference) -->
+<div id="footer-player" class="footer-player" hidden>
+    <button class="fp-play" type="button" title="Phát / Tạm dừng">▶</button>
+    <div class="fp-thumb">
+        <span class="fp-num">1</span>
+    </div>
+    <div class="fp-body">
+        <div class="fp-meta">
+            <span class="fp-track">Bài 1</span>
+            <div class="fp-times">
+                <span class="fp-time">0:00</span>
+                <span class="fp-sep"> / </span>
+                <span class="fp-duration">—:——</span>
+            </div>
+        </div>
+        <div class="fp-bar-wrap">
+            <div class="fp-bar-bg"></div>
+            <div class="fp-bar-fill"></div>
+            <input class="fp-seek" type="range" min="0" max="100" step="0.1" value="0">
+        </div>
+    </div>
+    <button class="fp-close" type="button" title="Đóng">✕</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

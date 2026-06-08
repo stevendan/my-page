@@ -170,20 +170,15 @@ h1 {
     border-left: 4px solid #2f72be;
     margin-bottom: 10px;
 }
-.audio-btns {
-    display: flex;
-    gap: 5px;
-    flex-shrink: 0;
-}
 .audio-btn {
     flex-shrink: 0;
-    width: 34px;
-    height: 34px;
+    width: 28px;
+    height: 28px;
     border: none;
     border-radius: 50%;
     background: linear-gradient(135deg, #ea8c52 0%, #c96535 100%);
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     cursor: pointer;
     display: inline-flex;
@@ -191,6 +186,12 @@ h1 {
     justify-content: center;
     box-shadow: 0 3px 10px rgba(234, 140, 82, 0.42);
     transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+/* Larger button for exam heading (inside lesson-heading) */
+.lesson-heading .audio-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
 }
 .audio-btn:hover {
     transform: scale(1.12);
@@ -376,7 +377,7 @@ body.has-player {
     border-left-color: #ea8c52;
     background: linear-gradient(90deg, #fff2e8, #f6faff);
 }
-.lesson-heading.audio-playing .audio-btn {
+.audio-btn.is-playing {
     animation: pulse-btn 1.6s ease infinite;
 }
 @keyframes pulse-btn {
@@ -399,7 +400,9 @@ body.has-player {
     padding: 10px;
 }
 .major-heading {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     font-size: 14px;
     font-weight: 700;
     color: #0f4b86;

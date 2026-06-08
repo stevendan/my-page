@@ -103,7 +103,8 @@ function attachPlayer(lessonNum, part) {
         fp.querySelector('.fp-track').textContent = 'Mô phỏng';
     } else {
         fp.querySelector('.fp-num').textContent  = lessonNum;
-        fp.querySelector('.fp-track').textContent = `Bài ${lessonNum} · Phần ${part}`;
+        const partLabel = part === 1 ? 'Nghe' : part === 2 ? 'Ngữ âm' : `Phần ${part}`;
+        fp.querySelector('.fp-track').textContent = `Bài ${lessonNum} · ${partLabel}`;
     }
     fp.removeAttribute('hidden');
     document.body.classList.add('has-player');
@@ -135,11 +136,8 @@ function syncAudioBtn(lessonNum, part, playing) {
     if (lessonNum === null) return;
     const btn = document.querySelector(`.audio-btn[data-lesson="${lessonNum}"][data-part="${part}"]`);
     if (btn) {
-        if (part === 0) {
-            btn.textContent = playing ? '⏸' : '▶';
-        } else {
-            btn.textContent = playing ? '⏸' : String(part);
-        }
+        btn.textContent = playing ? '⏸' : '▶';
+        btn.classList.toggle('is-playing', playing);
     }
     const heading = document.getElementById(`lesson-${lessonNum}`);
     if (heading) heading.classList.toggle('audio-playing', playing);
@@ -159,6 +157,7 @@ function renderContent(keyword = '') {
     let majorOpen  = false;
     let subOpen    = false;
     let introOpen  = false;
+    let currentLessonNum = null;
 
     function openIntro()   { if (!introOpen)  { html += '<div class="intro-block">'; introOpen = true; } }
     function closeIntro()  { if (introOpen)   { html += '</div>'; introOpen = false; } }
@@ -180,18 +179,11 @@ function renderContent(keyword = '') {
         if (lessonMatchLocal) {
             closeIntro(); closeLesson();
             const n = Number(lessonMatchLocal[1]);
+            currentLessonNum = n;
             lessonOpen = true;
-            const src1 = `mp3/${String(n).padStart(2, '0')}-1.mp3`;
-            const src2 = `mp3/${String(n).padStart(2, '0')}-2.mp3`;
-            const p1Active = playingLesson === n && playingPart === 1 && !audio.paused;
-            const p2Active = playingLesson === n && playingPart === 2 && !audio.paused;
             html += `<div class="lesson-block">` +
                     `<div id="lesson-${n}" class="lesson-heading${playingLesson === n ? ' audio-playing' : ''}">` +
                     `<span>${highlightText(line, keyword)}</span>` +
-                    `<div class="audio-btns">` +
-                    `<button class="audio-btn" data-lesson="${n}" data-part="1" data-src="${src1}" type="button" title="Phần 1">${p1Active ? '⏸' : '1'}</button>` +
-                    `<button class="audio-btn" data-lesson="${n}" data-part="2" data-src="${src2}" type="button" title="Phần 2">${p2Active ? '⏸' : '2'}</button>` +
-                    `</div>` +
                     `</div>`;
             return;
         }
@@ -200,12 +192,13 @@ function renderContent(keyword = '') {
         if (examTitleRegex.test(trimmed)) {
             closeIntro(); closeLesson();
             const n = 16;
+            currentLessonNum = n;
             lessonOpen = true;
             const examActive = playingLesson === n && !audio.paused;
             html += `<div class="lesson-block">` +
                     `<div id="lesson-${n}" class="lesson-heading${playingLesson === n ? ' audio-playing' : ''}">` +
                     `<span>${highlightText(line, keyword)}</span>` +
-                    `<button class="audio-btn" data-lesson="${n}" data-part="0" data-src="${EXAM_AUDIO_SRC}" type="button" title="Phát audio mô phỏng">${examActive ? '⏸' : '▶'}</button>` +
+                    `<button class="audio-btn${examActive ? ' is-playing' : ''}" data-lesson="${n}" data-part="0" data-src="${EXAM_AUDIO_SRC}" type="button" title="Phát audio mô phỏng">${examActive ? '⏸' : '▶'}</button>` +
                     `</div>`;
             return;
         }
@@ -220,7 +213,21 @@ function renderContent(keyword = '') {
             closeSub();
             if (majorOpen) html += '</div>';
             majorOpen = true;
-            html += `<div class="major-section"><div class="major-heading">${highlightText(line, keyword)}</div>`;
+
+            let sectionBtn = '';
+            if (currentLessonNum !== null && currentLessonNum !== 16) {
+                const padded = String(currentLessonNum).padStart(2, '0');
+                if (/一、.*听力|^听力$/.test(trimmed)) {
+                    const src = `mp3/${padded}-1.mp3`;
+                    const isActive = playingLesson === currentLessonNum && playingPart === 1 && !audio.paused;
+                    sectionBtn = `<button class="audio-btn${isActive ? ' is-playing' : ''}" data-lesson="${currentLessonNum}" data-part="1" data-src="${src}" type="button" title="Phát audio phần nghe">${isActive ? '⏸' : '▶'}</button>`;
+                } else if (/三、.*语音|^语音$/.test(trimmed)) {
+                    const src = `mp3/${padded}-2.mp3`;
+                    const isActive = playingLesson === currentLessonNum && playingPart === 2 && !audio.paused;
+                    sectionBtn = `<button class="audio-btn${isActive ? ' is-playing' : ''}" data-lesson="${currentLessonNum}" data-part="2" data-src="${src}" type="button" title="Phát audio phần ngữ âm">${isActive ? '⏸' : '▶'}</button>`;
+                }
+            }
+            html += `<div class="major-section"><div class="major-heading">${highlightText(line, keyword)}${sectionBtn}</div>`;
             return;
         }
 

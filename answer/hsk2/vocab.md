@@ -1,443 +1,291 @@
-# HSK 3 — Từ vựng mới Bài 1–20
+# Từ vựng mới HSK2 (so với HSK1) — theo từng bài 标准教程 3
 
-> Tổng hợp từ sách bài tập HSK 标准教程 3  
-> Cột "Nhật" ghi kanji tương đương và chú thích nếu khác nghĩa  
-> ⚠️ = False friend Trung–Nhật
+> Dựa trên đối chiếu danh sách 150 từ HSK1 và 150 từ mới của HSK2, ánh xạ vào nội dung từng bài (第1课–第15课) dựa trên phần luyện nghe đã cung cấp.
 
 ---
 
-## 第1课 周末你有什么打算
+## 第1课 — 九月去北京旅游最好
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 打算 | dǎsuàn | dự định, có kế hoạch | 打算 (JP: không dùng độc lập; VN: "dự tính") |
-| 2 | 经理 | jīnglǐ | giám đốc, quản lý | ⚠️ 経理 (JP: *kế toán/tài chính*) |
-| 3 | 开会 | kāihuì | họp, mở cuộc họp | 会議を開く (JP: dùng danh từ 会議) |
-| 4 | 搬家 | bānjiā | chuyển nhà | 引っ越し (JP: từ khác) |
-| 5 | 牛肉 | niúròu | thịt bò | 牛肉 (JP: 牛肉 *gyūniku* — cùng nghĩa ✓) |
-| 6 | 面包 | miànbāo | bánh mì | パン (JP: từ khác — ngoại lai) |
-| 7 | 便宜 | piányí | rẻ (giá) | ⚠️ 便宜 (JP: *tiện lợi, thuận tiện*) |
-| 8 | 电子地图 | diànzǐ dìtú | bản đồ điện tử | 電子地図 (JP: cùng nghĩa ✓) |
-| 9 | 着急 | zháojí | lo lắng, sốt ruột | 焦る (JP: dùng động từ khác) |
-| 10 | 高兴 | gāoxìng | vui vẻ, vui mừng | 高興 (JP: không dùng; → 嬉しい) |
-| 11 | 复习 | fùxí | ôn tập | 復習 (JP: 復習 *fukushū* — cùng nghĩa ✓) |
-| 12 | 作业 | zuòyè | bài tập (về nhà) | ⚠️ 作業 (JP: *công việc thao tác, lao động*) |
-| 13 | 旅游 | lǚyóu | du lịch | 旅行 (JP: dùng 旅行 *ryokō*) |
-| 14 | 鸡蛋 | jīdàn | trứng gà | 鶏卵 / 卵 (JP: dùng 卵 *tamago*) |
-| 15 | 电脑游戏 | diànnǎo yóuxì | trò chơi điện tử / game | ゲーム (JP: dùng từ ngoại lai) |
-| 16 | 周末 | zhōumò | cuối tuần | 週末 (JP: 週末 *shūmatsu* — cùng nghĩa ✓) |
-| 17 | 月末 | yuèmò | cuối tháng | 月末 (JP: 月末 *getsumatsū* — cùng nghĩa ✓) |
+|---|------|--------|------------------|----------|
+| 1 | 踢足球 | tī zúqiú | đá bóng | 足球 hiểu được nhưng Nhật thường dùng サッカー; 踢 không phổ biến trong Nhật |
+| 2 | 为什么 | wèishénme | tại sao | Không phải kanji ghép Nhật, nhưng 为(為)+什么 dễ liên tưởng nghĩa |
+| 3 | 一起 | yìqǐ | cùng nhau | 一緒に (いっしょに) — giống nghĩa ✅ |
+| 4 | 运动 | yùndòng | vận động, thể thao | 運動 (うんどう) — giống chữ và nghĩa ✅ |
+| 5 | 眼睛 | yǎnjīng | con mắt | Nhật thường dùng 目 (め); 眼睛 ít dùng nhưng vẫn hiểu |
+| 6 | 好吃 | hǎochī | ngon | ⚠️ Đừng nhầm 好 với 好き (すき = thích) trong Nhật |
+| 7 | 跑步 | pǎobù | chạy bộ | 走る (はしる); 跑步 là từ mới hoàn toàn |
+| 8 | 旅游 | lǚyóu | du lịch | ⚠️ Nhật dùng 旅行 (りょこう), khác chữ thứ 2 (游 vs 行) |
+| 9 | 觉得 | juédé | cảm thấy, nghĩ rằng | ⚠️ 覚える (おぼえる = nhớ/học) khác nghĩa hoàn toàn |
+| 10 | 可能 | kěnéng | có thể | 可能 (かのう) — giống chữ và nghĩa ✅ |
+| 11 | 时间 | shíjiān | thời gian | 時間 (じかん) — giống hoàn toàn ✅ |
+| 12 | 吧 | ba | (trợ từ đề nghị) | Không có tương đương trong Nhật |
+| 13 | 每 | měi | mỗi | 毎 (まい) — gần giống, cùng gốc |
+| 14 | 得 | de | (bổ ngữ trình độ) | Trợ từ ngữ pháp riêng của Trung |
+| 15 | 门 | mén | cửa | 門 (もん/かど) — 门 là thể giản của 門, nghĩa giống ✅ |
+| 16 | 鱼 | yú | cá | 魚 (さかな) — 鱼 là thể giản của 魚, nghĩa giống ✅ |
+| 17 | 最 | zuì | nhất | 最 (もっと/さい) — giống nghĩa ✅ |
+| 18 | 件 | jiàn | cái, chiếc (lượng từ áo) | ⚠️ Nhật 件 (けん) dùng cho sự việc/vụ, Trung dùng cho quần áo |
+| 19 | 要 | yào | muốn, cần, sẽ | ⚠️ 要る (いる = cần) chỉ trùng một phần nghĩa |
+| 20 | 问 | wèn | hỏi | 問う (とう) — 问 là thể giản của 問, giống nghĩa ✅ |
+| 21 | 也 | yě | cũng | Không phải kanji thường dùng độc lập trong Nhật |
+| 22 | 新 | xīn | mới | 新 (しん/あたら) — giống nghĩa ✅ |
 
 ---
 
-## 第2课 他什么时候回来
+## 第2课 — 我每天六点起床
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 运动 | yùndòng | vận động, thể dục | 運動 (JP: 運動 *undō* — cùng nghĩa ✓) |
-| 2 | 跑步 | pǎobù | chạy bộ | ジョギング / 走る (JP: 走る *hashiru*) |
-| 3 | 瘦 | shòu | gầy | 痩せている (JP: dùng động từ 痩せる) |
-| 4 | 办公室 | bàngōngshì | văn phòng | 事務所 / オフィス (JP: 事務所 *jimusho*) |
-| 5 | 公共汽车 | gōnggòng qìchē | xe buýt | バス (JP: từ ngoại lai) |
-| 6 | 出租车 | chūzūchē | xe taxi | タクシー (JP: từ ngoại lai) |
-| 7 | 伞 | sǎn | ô dù | 傘 (JP: 傘 *kasa* — cùng nghĩa ✓) |
-| 8 | 脚 | jiǎo | chân (bàn chân) | ⚠️ 脚 (JP: *chân nói chung, cả cẳng chân*; CN: chỉ bàn chân) |
-| 9 | 上楼 / 下楼 | shànglóu / xiàlóu | lên lầu / xuống lầu | 上がる / 下りる (JP: dùng động từ khác) |
-| 10 | 容易 | róngyì | dễ dàng | 容易 (JP: 容易 *yōi* — cùng nghĩa ✓) |
-| 11 | 难 | nán | khó | 難しい (JP: dùng tính từ *muzukashii*) |
-| 12 | 辆 | liàng | lượt từ chỉ xe | 台 (JP: lượng từ chỉ xe là 台 *dai*) |
-| 13 | 腿 | tuǐ | đùi, chân (cẳng chân) | 腿 (JP: ít dùng; → 足 / 脚) |
-| 14 | 拿 | ná | cầm, lấy | 持つ / 取る (JP: dùng 持つ hoặc 取る) |
+|---|------|--------|------------------|----------|
+| 1 | 服务员 | fúwùyuán | nhân viên phục vụ | 服務員 (ふくむいん) — giống chữ, Nhật ít dùng (thường nói スタッフ) |
+| 2 | 身体 | shēntǐ | cơ thể, sức khỏe | 身体 (しんたい) — giống chữ và nghĩa cơ bản ✅ |
+| 3 | 起床 | qǐchuáng | thức dậy | 起床 (きしょう) — giống chữ và nghĩa ✅ |
+| 4 | 孩子 | háizi | đứa trẻ, con | Nhật thường dùng 子供 (こども); 孩子 ít dùng |
+| 5 | 意思 | yìsi | ý nghĩa | ⚠️ Nhật 意思 (いし) = ý định/ý chí, khác nghĩa "ý nghĩa của từ" |
+| 6 | 早上 | zǎoshàng | buổi sáng sớm | Nhật dùng 朝 (あさa); 早上 là cụm từ riêng Trung |
+| 7 | 已经 | yǐjīng | đã, rồi | Nhật dùng すでに; 已経 không phải từ chuẩn Nhật |
+| 8 | 生病 | shēngbìng | bị bệnh | Nhật nói 病気になる; 生病 là động-tân riêng của Trung |
+| 9 | 对 | duì | đúng; đối với | 対 (たい) — 对 là thể giản của 対; ⚠️ nghĩa "đúng" không có trong Nhật |
+| 10 | 累 | lèi | mệt | ⚠️ **False friend nghiêm trọng**: 累 (るい) trong Nhật = tích lũy/liên tiếp, KHÔNG có nghĩa "mệt" (Nhật dùng 疲れる) |
+| 11 | 忙 | máng | bận | Nhật dùng 忙しい (いそがしい) — cùng chữ 忙 nhưng cách dùng khác |
+| 12 | 给 | gěi | cho, đưa | 給 (きゅう) — 给 là thể giản của 給; ⚠️ Trung dùng như giới từ/động từ thường ngày |
+| 13 | 出 | chū | ra | 出る (でる) — giống nghĩa cơ bản ✅ |
+| 14 | 两 | liǎng | hai (lượng từ) | ⚠️ 両 (りょう) trong Nhật = "cả hai/lưỡng", khác nghĩa số "2" khi đếm |
+| 15 | 张 | zhāng | tờ, tấm (lượng từ) | 張る (はる = căng/dán) — không liên quan, từ mới |
+| 16 | 药 | yào | thuốc | 薬 (くすり) — 药 là thể giản của 薬, giống nghĩa ✅ |
+| 17 | 着 | zhe | (trợ từ tiếp diễn) | Trợ từ ngữ pháp riêng của Trung |
+| 18 | 外 | wài | ngoài | 外 (がい/そと) — giống nghĩa ✅ |
+| 19 | 高 | gāo | cao | 高い (たかい) — giống nghĩa ✅ |
+| 20 | 再 | zài | lại, nữa | 再 (さい) — giống nghĩa cơ bản ✅ |
+| 21 | 近 | jìn | gần | 近い (ちかい) — giống nghĩa ✅ |
 
 ---
 
-## 第3课 桌子上放着很多饮料
+## 第3课 — 左边那个红色的是我的
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 放 | fàng | đặt, để | 置く (JP: 置く *oku*) |
-| 2 | 饮料 | yǐnliào | đồ uống | 飲み物 (JP: 飲み物 *nomimono*) |
-| 3 | 花茶 | huāchá | trà hoa | 花茶 (JP: 花茶 *hancha*) |
-| 4 | 苹果 | píngguǒ | táo | リンゴ (JP: từ ngoại lai) |
-| 5 | 裤子 | kùzi | quần | ズボン / パンツ (JP: từ ngoại lai) |
-| 6 | 衬衫 | chènshān | áo sơ mi | シャツ (JP: từ ngoại lai) |
-| 7 | 颜色 | yánsè | màu sắc | 色 (JP: 色 *iro*) |
-| 8 | 记得 | jìde | nhớ (ra), ghi nhớ | 覚えている (JP: 覚えている *oboete iru*) |
-| 9 | 新鲜 | xīnxiān | tươi, mới tươi | 新鮮 (JP: 新鮮 *shinsen* — cùng nghĩa ✓) |
-| 10 | 红茶 | hóngchá | trà đỏ / trà đen | 紅茶 (JP: 紅茶 *kōcha* — cùng nghĩa ✓) |
-| 11 | 绿茶 | lǜchá | trà xanh | 緑茶 (JP: 緑茶 *ryokucha* — cùng nghĩa ✓) |
-| 12 | 舒服 | shūfu | thoải mái, dễ chịu | 快適 (JP: dùng 快適 *kaiteki*) |
-| 13 | 小心 | xiǎoxīn | cẩn thận | 気をつける (JP: dùng cụm khác) |
-| 14 | 或者 | huòzhě | hoặc là (trong câu trần thuật) | または / あるいは (JP: dùng から hoặc か) |
-| 15 | 冷饮 | lěngyǐn | đồ uống lạnh | 冷たい飲み物 (JP: không có từ ghép này) |
-| 16 | 甜 | tián | ngọt | 甘い (JP: 甘い *amai*) |
+|---|------|--------|------------------|----------|
+| 1 | 旁边 | pángbiān | bên cạnh | Nhật dùng そば/隣; không phải từ Hán Nhật chuẩn |
+| 2 | 牛奶 | niúnǎi | sữa bò | ⚠️ 牛乳 (ぎゅうにゅう) — khác chữ thứ 2 (奶 vs 乳), cùng nghĩa |
+| 3 | 手表 | shǒubiǎo | đồng hồ đeo tay | Nhật dùng 腕時計 (うでどけい), khác hoàn toàn cấu trúc |
+| 4 | 知道 | zhīdào | biết | 知る (しる) — 知 giống nghĩa, nhưng 知道 là cụm riêng của Trung |
+| 5 | 报纸 | bàozhǐ | báo (giấy) | Nhật dùng 新聞 (しんぶん) cho "báo"; 報紙 không phổ biến trong Nhật |
+| 6 | 房间 | fángjiān | phòng | Nhật dùng 部屋 (へや); 房间 khác hoàn toàn cấu trúc |
+| 7 | 左边 | zuǒbiān | bên trái | 左 (ひだり) giống nghĩa cơ bản, 左边 là cụm riêng của Trung |
+| 8 | 颜色 | yánsè | màu sắc | ⚠️ **False friend nghiêm trọng**: 顔色 (かおいろ) trong Nhật = "sắc mặt", Nhật dùng 色 (いろ) cho "màu" |
+| 9 | 丈夫 | zhàngfu | chồng | ⚠️ **False friend cực kỳ nổi tiếng**: 丈夫 (じょうぶ) trong Nhật = "khỏe mạnh/chắc chắn" (tính từ), Trung là danh từ "người chồng" |
+| 10 | 长 | cháng | dài | 長い (ながい) — giống nghĩa ✅ |
+| 11 | 真 | zhēn | thật, thực sự | 真 (しん/まこと) — giống nghĩa ✅ |
+| 12 | 黑 | hēi | đen | 黒 (くろ) — 黑 là thể giản của 黒, giống nghĩa ✅ |
+| 13 | 快 | kuài | nhanh | ⚠️ 快い (こころよい) trong Nhật = "thoải mái/dễ chịu", khác nghĩa "nhanh" |
+| 14 | 白 | bái | trắng | 白い (しろい) — giống nghĩa ✅ |
+| 15 | 送 | sòng | tặng, đưa | 送る (おくる) — giống nghĩa cơ bản ✅, Trung còn có nghĩa "tặng quà" |
 
 ---
 
-## 第4课 她总是笑着跟客人说话
+## 第4课 — 这工作是他帮我介绍的
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 总是 | zǒngshì | luôn luôn, lúc nào cũng | いつも (JP: いつも *itsumo*) |
-| 2 | 笑 | xiào | cười | 笑う (JP: 笑う *warau*) |
-| 3 | 客人 | kèrén | khách | お客さん (JP: お客さん *okyakusan*) |
-| 4 | 足球 | zúqiú | bóng đá | サッカー (JP: サッカー *sakkā*) |
-| 5 | 比赛 | bǐsài | thi đấu, cuộc thi | 試合 / 競争 (JP: 試合 *shiai*) |
-| 6 | 照片 | zhàopiàn | ảnh, hình ảnh | 写真 (JP: 写真 *shashin*) |
-| 7 | 蛋糕 | dàngāo | bánh kem | ケーキ (JP: từ ngoại lai) |
-| 8 | 饿 | è | đói | お腹が空く (JP: dùng cụm *onaka ga suku*) |
-| 9 | 西瓜 | xīguā | dưa hấu | スイカ (JP: từ ngoại lai) |
-| 10 | 站 | zhàn | đứng; trạm dừng | 立つ / 駅 (JP: đứng = 立つ; trạm = 駅) |
-| 11 | 热情 | rèqíng | nhiệt tình, thân thiện | 熱心 (JP: 熱心 *nesshin* — *nhiệt tâm, siêng năng*; khác sắc thái) |
-| 12 | 努力 | nǔlì | cố gắng, nỗ lực | 努力 (JP: 努力 *doryoku* — cùng nghĩa ✓) |
-| 13 | 聪明 | cōngming | thông minh | 聡明 (JP: 聡明 *sōmei* — cùng nghĩa, nhưng trang trọng hơn) |
-| 14 | 回答 | huídá | trả lời | 答える / 回答 (JP: 回答 *kaitō* — cùng nghĩa ✓) |
-| 15 | 告诉 | gàosu | nói cho biết, thông báo | 教える / 告げる (JP: 告げる *tsugeru*) |
-| 16 | 年轻 | niánqīng | trẻ tuổi | 若い (JP: 若い *wakai*) |
-| 17 | 认真 | rènzhēn | nghiêm túc, chăm chỉ | 真剣 / 真面目 (JP: 真面目 *majime*) |
-| 18 | 年级 | niánjí | lớp (học) | 年生 / 学年 (JP: 年生 *nensei*) |
-| 19 | 鲜花 | xiānhuā | hoa tươi | 生花 (JP: 生花 *seika/ikebana*) |
+|---|------|--------|------------------|----------|
+| 1 | 开始 | kāishǐ | bắt đầu | 開始 (かいし) — giống chữ và nghĩa ✅ |
+| 2 | 非常 | fēicháng | rất, vô cùng | ⚠️ **False friend nổi tiếng**: 非常 (ひじょう) trong Nhật = "khẩn cấp/bất thường" (非常口 = cửa thoát hiểm), Trung = "rất" |
+| 3 | 介绍 | jièshào | giới thiệu | ⚠️ Thứ tự chữ **đảo ngược** so với Nhật: Trung 介绍 ↔ Nhật 紹介 (しょうかい) |
+| 4 | 生日 | shēngrì | sinh nhật | Nhật dùng đầy đủ 誕生日 (たんじょうび); 生日 thiếu chữ 誕 |
+| 5 | 穿 | chuān | mặc (quần áo) | Nhật dùng 着る (きる); 穿 trong Nhật nghĩa là "xuyên qua, đào" — từ mới hoàn toàn về cách dùng |
 
 ---
 
-## 第5课 我最近越来越胖了
+## 第5课 — 就买这件吧
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 越来越 | yuèláiyuè | càng ngày càng | どんどん / ますます (JP: ますます *masumasu*) |
-| 2 | 胖 | pàng | béo, mập | 太っている (JP: dùng 太る *futoru*) |
-| 3 | 草 | cǎo | cỏ | 草 (JP: 草 *kusa* — cùng nghĩa ✓) |
-| 4 | 裙子 | qúnzi | váy | スカート (JP: từ ngoại lai) |
-| 5 | 感冒 | gǎnmào | cảm cúm, cảm lạnh | 風邪 (JP: 風邪 *kaze*) |
-| 6 | 发烧 | fāshāo | sốt | 熱がある (JP: 熱 *netsu*) |
-| 7 | 药 | yào | thuốc | 薬 (JP: 薬 *kusuri*) |
-| 8 | 照顾 | zhàogù | chăm sóc | 世話をする (JP: 世話 *sewa*) |
-| 9 | 季节 | jìjié | mùa, thời tiết theo mùa | 季節 (JP: 季節 *kisetsu* — cùng nghĩa ✓) |
-| 10 | 春天 | chūntiān | mùa xuân | 春 (JP: 春 *haru*) |
-| 11 | 夏天 | xiàtiān | mùa hè | 夏 (JP: 夏 *natsu*) |
-| 12 | 天气 | tiānqì | thời tiết | 天気 (JP: 天気 *tenki* — cùng nghĩa ✓) |
-| 13 | 健康 | jiànkāng | sức khỏe, khỏe mạnh | 健康 (JP: 健康 *kenkō* — cùng nghĩa ✓) |
-| 14 | 从来 | cónglái | từ trước đến nay (thường với 不/没) | これまで / 今まで (JP: cấu trúc khác) |
+|---|------|--------|------------------|----------|
+| 1 | 但是 | dànshì | nhưng | 但し (ただし) — giống nghĩa ✅, dù văn phong khác |
+| 2 | 饭馆 | fànguǎn | quán ăn, nhà hàng | Nhật dùng 食堂/レストラン; 飯館 không chuẩn trong Nhật |
+| 3 | 咖啡 | kāfēi | cà phê | コーヒー (mượn ngoại lai); 咖啡 là từ phiên âm riêng của Trung |
+| 4 | 晚上 | wǎnshàng | buổi tối | 晚(ばん) có trong từ ghép Nhật như 今晚; 晚上 là cụm riêng của Trung |
+| 5 | 羊肉 | yángròu | thịt dê/cừu | 羊肉 (ようにく) — giống chữ và nghĩa ✅ |
+| 6 | 准备 | zhǔnbèi | chuẩn bị | 準備 (じゅんび) — giống chữ và nghĩa ✅ |
+| 7 | 考试 | kǎoshì | thi, kỳ thi | ⚠️ Nhật phổ biến hơn là 試験 (しけん), thứ tự chữ khác với 考試 |
+| 8 | 游泳 | yóuyǒng | bơi | 遊泳 (ゆうえい) — giống chữ (游≈遊) và nghĩa ✅ |
+| 9 | 还 | hái | vẫn, còn | ⚠️ 還 (かん) trong Nhật = "trở về/hoàn trả" (還元, 帰還); 还 là thể giản của 還 |
+| 10 | 课 | kè | bài học, tiết học | 課 (か) — 课 là thể giản của 課; Nhật 課 hay dùng cho "phòng/ban" (営業課) |
+| 11 | 到 | dào | đến, tới | 到る (いたる) — giống nghĩa cơ bản ✅ |
+| 12 | 错 | cuò | sai | 錯 (さく) — 错 là thể giản của 錯, giống nghĩa, Nhật hay dùng trong từ ghép như 錯誤 |
+| 13 | 就 | jiù | thì, liền (phó từ) | Không có tương đương Hán-Nhật trực tiếp; từ ngữ pháp riêng của Trung |
 
 ---
 
-## 第6课 怎么突然找不到了
+## 第6课 — 你怎么不吃了
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 突然 | tūrán | đột nhiên | 突然 (JP: 突然 *totsuzen* — cùng nghĩa ✓) |
-| 2 | 刚才 | gāngcái | vừa mới, lúc nãy | さっき (JP: さっき *sakki*) |
-| 3 | 清楚 | qīngchǔ | rõ ràng, rõ | はっきり / 明確 (JP: はっきり *hakkiri*) |
-| 4 | 离开 | líkāi | rời đi, rời xa | 離れる / 去る (JP: 離れる *hanareru*) |
-| 5 | 帮忙 | bāngmáng | giúp đỡ | 手伝う (JP: 手伝う *tetsudau*) |
-| 6 | 眼镜 | yǎnjìng | kính mắt | 眼鏡 (JP: 眼鏡 *megane* — cùng nghĩa ✓) |
-| 7 | 特别 | tèbié | đặc biệt; rất, lắm | 特別 (JP: 特別 *tokubetsu* — cùng nghĩa ✓) |
-| 8 | 公园 | gōngyuán | công viên | 公園 (JP: 公園 *kōen* — cùng nghĩa ✓) |
-| 9 | 聊天儿 | liáotiānr | tán gẫu, trò chuyện | おしゃべりする (JP: dùng cụm khác) |
-| 10 | 音乐会 | yīnyuèhuì | buổi hòa nhạc, concert | コンサート (JP: từ ngoại lai; hoặc 演奏会) |
-| 11 | 妻子 | qīzǐ | vợ | 妻 (JP: 妻 *tsuma* — cùng nghĩa ✓) |
-| 12 | 花园 | huāyuán | vườn hoa | 花園 (JP: 花園 *hanazono* — cùng nghĩa ✓) |
-| 13 | 宾馆 | bīnguǎn | khách sạn | ホテル (JP: từ ngoại lai; hoặc 旅館) |
-| 14 | 锻炼 | duànliàn | luyện tập (thể dục) | 鍛える (JP: 鍛える *kitaeru*) |
+|---|------|--------|------------------|----------|
+| 1 | 打篮球 | dǎ lánqiú | chơi bóng rổ | Nhật hiện dùng バスケ; 打+篮球 là cấu trúc động-tân của Trung |
+| 2 | 自行车 | zìxíngchē | xe đạp | ⚠️ 自転車 (じてんしゃ) — khác chữ thứ 2,3: Trung 行 (đi) vs Nhật 転 (quay/lăn) |
+| 3 | 公斤 | gōngjīn | kilogram | キログラム (mượn ngoại lai); 公斤 là cách viết riêng của Trung |
+| 4 | 因为 | yīnwèi | vì | Cấu trúc 因为...所以... ≈ ので/から trong Nhật |
+| 5 | 姐姐 | jiějie | chị (gái) | 姉 (あね) là từ Nhật; 姐姐 lặp âm tiết kiểu Trung |
+| 6 | 所以 | suǒyǐ | vì vậy, nên | だから tương đương trong Nhật; 所以 không phổ biến trong Nhật |
 
 ---
 
-## 第7课 我跟她都认识五年了
+## 第7课 — 你家离公司远吗
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 迟到 | chídào | đến muộn, trễ | 遅刻 (JP: 遅刻 *chikoku* — cùng nghĩa ✓) |
-| 2 | 钟头 | zhōngtóu | tiếng đồng hồ, giờ | 時間 (JP: 時間 *jikan*) |
-| 3 | 感兴趣 | gǎn xìngqù | cảm thấy hứng thú | 興味がある (JP: 興味 *kyōmi*) |
-| 4 | 银行 | yínháng | ngân hàng | 銀行 (JP: 銀行 *ginkō* — cùng nghĩa ✓) |
-| 5 | 结婚 | jiéhūn | kết hôn | 結婚 (JP: 結婚 *kekkon* — cùng nghĩa ✓) |
-| 6 | 欢迎 | huānyíng | chào đón, hoan nghênh | 歓迎 (JP: 歓迎 *kangei* — cùng nghĩa ✓) |
-| 7 | 同事 | tóngshì | đồng nghiệp | 同僚 (JP: 同僚 *dōryō*; 同事 JP không dùng) |
-| 8 | 接 | jiē | đón (người), bắt (điện thoại) | 迎える / 受ける (JP: đón người = 迎える) |
-| 9 | 差 | chà | kém, thiếu | 差 (JP: 差 *sa* — *sự khác biệt*; khác nghĩa) |
-| 10 | 刻 | kè | khắc (15 phút); khắc chữ | 刻 (JP: 刻 *koku* — cổ nghĩa; nay: 15分) |
-| 11 | 音乐 | yīnyuè | âm nhạc | 音楽 (JP: 音楽 *ongaku* — cùng nghĩa ✓) |
-| 12 | 书店 | shūdiàn | nhà sách, hiệu sách | 本屋 (JP: 本屋 *honya*; hoặc 書店 *shoten* ✓) |
-| 13 | 门口 | ménkǒu | cổng, trước cửa | 入口 / 玄関 (JP: 入口 *iriguchi*) |
+|---|------|--------|------------------|----------|
+| 1 | 公共汽车 | gōnggòngqìchē | xe buýt | バス (mượn ngoại lai); 公共汽車 là cách gọi riêng của Trung lục địa |
+| 2 | 正在 | zhèngzài | đang (hành động) | ~ている trong Nhật; 正在 là cấu trúc ngữ pháp riêng của Trung |
+| 3 | 教室 | jiàoshì | lớp học | 教室 (きょうしつ) — giống chữ và nghĩa ✅ |
+| 4 | 小时 | xiǎoshí | giờ (đơn vị thời gian) | Nhật dùng 時間 cho khoảng thời gian; 小时 là cụm riêng của Trung |
+| 5 | 机场 | jīchǎng | sân bay | Nhật dùng 空港 (くうこう)/飛行場; 机场 khác hoàn toàn chữ |
+| 6 | 休息 | xiūxi | nghỉ ngơi | 休息 (きゅうそく) — giống chữ và nghĩa ✅ |
+| 7 | 远 | yuǎn | xa | 遠い (とおい) — 远 là thể giản của 遠, giống nghĩa ✅ |
+| 8 | 号 | hào | số, ngày (trong tháng) | 号 (ごう) — giống nghĩa cơ bản ✅ |
+| 9 | 过 | guò | (trợ từ kinh nghiệm: đã từng) | ≈ ~たことがある trong Nhật; 过 (giản của 過) là trợ từ ngữ pháp riêng |
+| 10 | 路 | lù | đường | 路 (ろ/みち) — giống nghĩa ✅ |
+| 11 | 走 | zǒu | đi bộ, rời đi | ⚠️ **False friend nổi tiếng**: 走る (はしる) trong Nhật = "CHẠY"; Trung 走 = "đi bộ/rời khỏi" (chạy = 跑) |
+| 12 | 离 | lí | cách (khoảng cách) | 離れる (はなれる) — giống nghĩa cơ bản ✅ |
 
 ---
 
-## 第8课 你去哪儿我就去哪儿
+## 第8课 — 让我想想再告诉你
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 害怕 | hàipà | sợ hãi | 怖い / 恐れる (JP: 怖い *kowai*) |
-| 2 | 熊猫 | xióngmāo | gấu trúc | パンダ (JP: パンダ *panda* — từ ngoại lai) |
-| 3 | 可爱 | kě'ài | dễ thương | 可愛い (JP: 可愛い *kawaii* — cùng nghĩa ✓) |
-| 4 | 满意 | mǎnyì | hài lòng, thỏa mãn | 満足 (JP: 満足 *manzoku*) |
-| 5 | 电梯 | diàntī | thang máy | エレベーター (JP: từ ngoại lai) |
-| 6 | 层 | céng | tầng (nhà) | 階 (JP: 階 *kai*) |
-| 7 | 安静 | ānjìng | yên tĩnh | 静か (JP: 静か *shizuka*) |
-| 8 | 洗手间 | xǐshǒujiān | nhà vệ sinh, phòng tắm | トイレ / お手洗い (JP: トイレ *toire*) |
-| 9 | 重要 | zhòngyào | quan trọng | 重要 (JP: 重要 *jūyō* — cùng nghĩa ✓) |
-| 10 | 健康 | jiànkāng | sức khỏe | 健康 (JP: 健康 *kenkō* — cùng nghĩa ✓) |
-| 11 | 变化 | biànhuà | sự thay đổi | 変化 (JP: 変化 *henka* — cùng nghĩa ✓) |
-| 12 | 面试 | miànshì | phỏng vấn xin việc | 面接 (JP: 面接 *mensetsu* — cùng nghĩa ✓) |
-| 13 | 几乎 | jīhū | gần như, hầu như | ほとんど (JP: ほとんど *hotondo*) |
-| 14 | 自学 | zìxué | tự học | 独学 (JP: 独学 *dokugaku*) |
-| 15 | 离婚 | líhūn | ly hôn | 離婚 (JP: 離婚 *rikon* — cùng nghĩa ✓) |
+|---|------|--------|------------------|----------|
+| 1 | 告诉 | gàosù | nói cho biết | ⚠️ **False friend nghiêm trọng**: 告訴 (こくそ) trong Nhật = "khởi tố/kiện cáo" (pháp lý), Trung = "nói cho ai biết" |
+| 2 | 手机 | shǒujī | điện thoại di động | Nhật dùng 携帯電話/スマホ; 手机 (tay-máy) là cách gọi riêng của Trung |
+| 3 | 事情 | shìqing | việc, sự việc | ⚠️ Nhật 事情 (じじょう) = "tình huống/lý do", Trung = "việc, công việc" chung |
+| 4 | 贵 | guì | đắt, quý | ⚠️ 貴 (たかい/とうとい) trong Nhật = "cao quý/đáng kính", Trung 贵 = "đắt (giá)" |
+| 5 | 红 | hóng | đỏ | 紅 (べに/くれない) — 红 là thể giản của 紅, Nhật ít dùng độc lập cho "màu đỏ" (dùng 赤) |
+| 6 | 让 | ràng | để cho, khiến | ⚠️ 譲る (ゆずる) trong Nhật = "nhường nhịn", Trung 让 (giản của 讓) = "khiến/cho phép" |
+| 7 | 找 | zhǎo | tìm | Nhật dùng 探す (さがす); 找 không phổ biến trong Nhật — từ mới hoàn toàn |
 
 ---
 
-## 第9课 她的汉语说得跟中国人一样好
+## 第9课 — 题太多，我没做完
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 跟…一样 | gēn…yīyàng | giống…như | …と同じ (JP: …と同じ *to onaji*) |
-| 2 | 参赛 | cānsài | tham gia thi đấu | 参加する (JP: 参加 *sanka*) |
-| 3 | 第一 | dìyī | thứ nhất, đầu tiên | 第一 (JP: 第一 *daiichi* — cùng nghĩa ✓) |
-| 4 | 中间 | zhōngjiān | ở giữa, trung tâm | 真ん中 / 中間 (JP: 中間 *chūkan* ✓) |
-| 5 | 了解 | liǎojiě | hiểu rõ, tìm hiểu | 理解 (JP: 理解 *rikai* — gần nghĩa; 了解 JP: hiểu / chấp thuận) |
-| 6 | 担心 | dānxīn | lo lắng | 心配する (JP: 心配 *shinpai*) |
-| 7 | 比较 | bǐjiào | tương đối, khá; so sánh | 比較的 / 比較する (JP: 比較 *hikaku* ✓) |
-| 8 | 班 | bān | lớp học | クラス (JP: クラス *kurasu*; hoặc 班 *han* — *nhóm*) |
-| 9 | 旁边 | pángbiān | bên cạnh | 隣 / そば (JP: 隣 *tonari*) |
-| 10 | 晴天 | qíngtiān | trời nắng | 晴れ (JP: 晴れ *hare*) |
-| 11 | 放心 | fàngxīn | yên tâm, an tâm | 安心する (JP: 安心 *anshin*) |
+|---|------|--------|------------------|----------|
+| 1 | 第一 | dì-yī | thứ nhất | 第一 (だいいち) — giống chữ và nghĩa ✅ |
+| 2 | 跳舞 | tiàowǔ | nhảy múa | 踊る (おどる)/ダンス; 跳舞 là cấu trúc động-tân riêng của Trung |
+| 3 | 完 | wán | xong, hết | 完 (かん) — giống nghĩa cơ bản ✅ |
+| 4 | 您 | nín | ngài, ông/bà (kính ngữ) | Không có tương đương kanji riêng; Nhật thể hiện kính ngữ qua động từ |
+| 5 | 从 | cóng | từ (nơi/lúc) | から trong Nhật; 从 (giản của 從) không phổ biến trong Nhật hiện đại |
+| 6 | 次 | cì | lần, lượt | ⚠️ Trung 次 dùng làm lượng từ đếm số lần (一次), Nhật 次 (じ/つぎ) nghĩa chính là "tiếp theo, kế tiếp" |
+| 7 | 懂 | dǒng | hiểu | わかる/解る; 懂 không phổ biến trong Nhật hiện đại |
+| 8 | 洗 | xǐ | giặt, rửa | 洗う (あらう) — giống nghĩa ✅ |
+| 9 | 题 | tí | câu hỏi, đề (bài) | Nhật 題 (だい) thiên về "tiêu đề/chủ đề", Trung 题 trong thi cử = "câu hỏi" |
+| 10 | 票 | piào | vé | 票 (ひょう) — gần giống, "vé" trong Nhật phổ biến hơn là 切符 |
+| 11 | 等 | děng | chờ, đợi | ⚠️ Trung 等 = "chờ đợi", Nhật 等 (とう) chủ yếu nghĩa "cấp độ" hoặc "vân vân" (など) |
 
 ---
 
-## 第10课 数学比历史难多了
+## 第10课 — 别找了，手机在桌子上呢
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 数学 | shùxué | toán học | 数学 (JP: 数学 *sūgaku* — cùng nghĩa ✓) |
-| 2 | 历史 | lìshǐ | lịch sử | 歴史 (JP: 歴史 *rekishi* — cùng nghĩa ✓) |
-| 3 | 环境 | huánjìng | môi trường, không gian | 環境 (JP: 環境 *kankyō* — cùng nghĩa ✓) |
-| 4 | 附近 | fùjìn | gần đây, xung quanh | 近く / 付近 (JP: 付近 *fukin* ✓) |
-| 5 | 主要 | zhǔyào | chủ yếu, chính yếu | 主に (JP: 主 *omo ni*) |
-| 6 | 骑 | qí | đạp (xe), cưỡi | 乗る (JP: 乗る *noru* — dùng cho nhiều phương tiện) |
-| 7 | 自行车 | zìxíngchē | xe đạp | 自転車 (JP: 自転車 *jitensha* — cùng nghĩa ✓) |
-| 8 | 换 | huàn | đổi, thay | 替える / 換える (JP: 換える *kaeru* ✓) |
-| 9 | 旧 | jiù | cũ | 古い (JP: 古い *furui*) |
-| 10 | 方便 | fāngbiàn | tiện lợi | ⚠️ 方便 (JP: không thông dụng; CN: *tiện lợi*) |
-| 11 | 个子 | gèzi | chiều cao, vóc người | 身長 / 背 (JP: 背 *se*) |
-| 12 | 矮 | ǎi | thấp (người) | 背が低い (JP: dùng cụm) |
-| 13 | 体育 | tǐyù | thể dục, thể thao | 体育 (JP: 体育 *taiiku* — cùng nghĩa ✓) |
+|---|------|--------|------------------|----------|
+| 1 | 唱歌 | chànggē | hát | 歌う (うたう); 唱歌 (しょうか) trong Nhật nghĩa là "môn học hát" (cũ) ⚠️ khác cách dùng động từ |
+| 2 | 帮助 | bāngzhù | giúp đỡ | ⚠️ **False friend nghiêm trọng**: 幇助 (ほうじょ) trong Nhật = thuật ngữ pháp lý "tội đồng phạm/giúp sức", Trung = "giúp đỡ" thông thường |
+| 3 | 别 | bié | đừng, chớ | ⚠️ Trung 别 = phó từ phủ định mệnh lệnh ("đừng làm gì"), Nhật 別 (べつ) = "khác/riêng biệt" |
 
 ---
 
-## 第11课 别忘了把空调关了
+## 第11课 — 他比我大三岁
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 空调 | kōngtiáo | máy điều hòa | エアコン (JP: エアコン *eakon* — từ ngoại lai) |
-| 2 | 忘记 | wàngjì | quên | 忘れる (JP: 忘れる *wasureru*) |
-| 3 | 词典 | cídiǎn | từ điển | 辞書 / 辞典 (JP: 辞書 *jisho*; 辞典 *jiten* ✓) |
-| 4 | 花瓶 | huāpíng | bình hoa | 花瓶 (JP: 花瓶 *kabin* — cùng nghĩa ✓) |
-| 5 | 筷子 | kuàizi | đũa | 箸 (JP: 箸 *hashi*) |
-| 6 | 运动会 | yùndònghuì | hội thao, thể thao hội | 運動会 (JP: 運動会 *undōkai* — cùng nghĩa ✓) |
-| 7 | 左右 | zuǒyòu | khoảng, xấp xỉ; trái phải | 左右 (JP: 左右 *sayū* — cùng nghĩa ✓) |
-| 8 | 地铁 | dìtiě | tàu điện ngầm | 地下鉄 (JP: 地下鉄 *chikatetsu*) |
-| 9 | 图书馆 | túshūguǎn | thư viện | 図書館 (JP: 図書館 *toshokan* — cùng nghĩa ✓) |
-| 10 | 笔记本电脑 | bǐjìběn diànnǎo | máy tính xách tay | ノートパソコン (JP: từ ngoại lai) |
-| 11 | 电子邮件 | diànzǐ yóujiàn | thư điện tử, email | メール (JP: メール *mēru*) |
-| 12 | 啤酒 | píjiǔ | bia | ビール (JP: ビール *bīru* — từ ngoại lai) |
-| 13 | 结束 | jiéshù | kết thúc | 終わる / 終了 (JP: 終了 *shūryō*) |
-| 14 | 借 | jiè | mượn; cho mượn | 借りる / 貸す (JP: hai từ phân biệt rõ hơn) |
-| 15 | 灯 | dēng | đèn | 電灯 / ランプ (JP: 電灯 *dentō*) |
-| 16 | 口 | kǒu | miệng; ngụm; lượng từ | ⚠️ 口 (JP: 口 *kuchi* — chỉ miệng; CN còn là lượng từ) |
+|---|------|--------|------------------|----------|
+| 1 | 西瓜 | xīguā | dưa hấu | 西瓜 (すいか) — giống chữ và nghĩa ✅ |
+| 2 | 去年 | qùnián | năm ngoái | 去年 (きょねん) — giống chữ và nghĩa ✅ |
+| 3 | 便宜 | piányi | rẻ | ⚠️ **False friend nổi tiếng**: 便宜 (べんぎ) trong Nhật = "thuận tiện/hợp lý" (便宜上), Trung = "RẺ" |
+| 4 | 右边 | yòubiān | bên phải | 右 (みぎ) giống nghĩa cơ bản, 右边 là cụm riêng của Trung |
+| 5 | 哥哥 | gēge | anh (trai) | 兄 (あに) là từ Nhật; 哥哥 lặp âm tiết kiểu Trung |
+| 6 | 百 | bǎi | trăm | 百 (ひゃく) — giống nghĩa ✅ |
 
 ---
 
-## 第12课 把重要的东西放在我这儿吧
+## 第12课 — 你穿得太少了
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 护照 | hùzhào | hộ chiếu, passport | パスポート (JP: パスポート *pasupōto*) |
-| 2 | 行李箱 | xínglǐxiāng | vali | スーツケース (JP: từ ngoại lai) |
-| 3 | 起飞 | qǐfēi | cất cánh (máy bay) | 離陸 (JP: 離陸 *ririku*) |
-| 4 | 黑板 | hēibǎn | bảng đen | 黒板 (JP: 黒板 *kokuban* — cùng nghĩa ✓) |
-| 5 | 字典 | zìdiǎn | từ điển chữ Hán | 字典 (JP: 字典 *jiten* — cùng nghĩa ✓) |
-| 6 | 太阳 | tàiyáng | mặt trời | 太陽 (JP: 太陽 *taiyō* — cùng nghĩa ✓) |
-| 7 | 画画儿 | huà huàr | vẽ tranh | 絵を描く (JP: 絵を描く *e wo kaku*) |
-| 8 | 司机 | sījī | tài xế | 運転手 (JP: 運転手 *untenshu*) |
-| 9 | 发现 | fāxiàn | phát hiện | 発見 (JP: 発見 *hakken* — cùng nghĩa ✓) |
-| 10 | 钱包 | qiánbāo | ví tiền | 財布 (JP: 財布 *saifu*) |
-| 11 | 生气 | shēngqì | tức giận | 怒る (JP: 怒る *okoru*) |
-| 12 | 需要 | xūyào | cần, có nhu cầu | 必要 (JP: 必要 *hitsuyō* — cùng ý nhưng khác từ loại) |
-| 13 | 决定 | juédìng | quyết định | 決定 (JP: 決定 *kettei* — cùng nghĩa ✓) |
+|---|------|--------|------------------|----------|
+| 1 | 可以 | kěyǐ | có thể, được phép | Không phổ biến trong Nhật; Nhật dùng できる/てもいい |
+| 2 | 妻子 | qīzi | vợ | 妻 (つま) — giống chữ gốc, nghĩa giống ✅ (Nhật bỏ chữ 子) |
+| 3 | 弟弟 | dìdi | em trai | 弟 (おとうと) — giống chữ gốc, nghĩa giống ✅ (Trung lặp âm tiết) |
+| 4 | 鸡蛋 | jīdàn | trứng gà | ⚠️ 鶏卵 (けいらん) — khác chữ: Trung 鸡(雞)+蛋, Nhật 鶏+卵, nghĩa giống nhưng viết khác |
+| 5 | 雪 | xuě | tuyết | 雪 (ゆき) — giống chữ và nghĩa ✅ |
 
 ---
 
-## 第13课 我是走回来的
+## 第13课 — 门开着呢
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 终于 | zhōngyú | cuối cùng, rốt cuộc | ついに / とうとう (JP: ついに *tsui ni*) |
-| 2 | 爷爷 | yéye | ông nội | 祖父 / おじいさん (JP: 祖父 *sofu*) |
-| 3 | 礼物 | lǐwù | quà tặng | プレゼント / 贈り物 (JP: 贈り物 *okurimono*) |
-| 4 | 遇到 | yùdào | gặp (tình cờ) | 出会う / 会う (JP: 出会う *deau*) |
-| 5 | 面试 | miànshì | phỏng vấn xin việc | 面接 (JP: 面接 *mensetsu* ✓) |
-| 6 | 愿意 | yuànyì | sẵn sàng, muốn | 〜したい / 意欲がある (JP: dùng ý chí khác) |
-| 7 | 应该 | yīnggāi | nên, phải | 〜べきだ / 〜はずだ (JP: 〜べき *beki*) |
-| 8 | 一般 | yībān | thông thường, bình thường | 一般的 (JP: 一般 *ippan* — cùng nghĩa ✓) |
-| 9 | 一边…一边 | yībiān…yībiān | vừa…vừa | 〜ながら (JP: 〜ながら *nagara*) |
-| 10 | 站起来 | zhàn qǐlái | đứng dậy | 立ち上がる (JP: 立ち上がる *tachiagaru*) |
-| 11 | 半路 | bànlù | giữa đường | 途中 (JP: 途中 *tochū*) |
-| 12 | 习惯 | xíguàn | thói quen; quen với | 習慣 (JP: 習慣 *shūkan* — cùng nghĩa ✓) |
+|---|------|--------|------------------|----------|
+| 1 | 大家 | dàjiā | mọi người | ⚠️ Nhật 大家 (おおや) = "chủ nhà cho thuê" (hoặc "đại gia/bậc thầy"), Trung = "mọi người" |
+| 2 | 妹妹 | mèimei | em gái | 妹 (いもうと) — giống chữ gốc, nghĩa giống ✅ |
+| 3 | 进 | jìn | vào, tiến vào | ⚠️ 进 (giản của 進) Trung dùng cụ thể "đi vào (phòng)", Nhật 進 (すすむ) thiên về "tiến bộ/tiến triển" trừu tượng |
+| 4 | 笑 | xiào | cười | 笑う (わらう) — giống nghĩa ✅ |
 
 ---
 
-## 第14课 你把水果拿过来
+## 第14课 — 你看过这个电影吗
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 刮风 | guāfēng | gió thổi, có gió | 風が吹く (JP: 風が吹く *kaze ga fuku*) |
-| 2 | 冰箱 | bīngxiāng | tủ lạnh | 冷蔵庫 (JP: 冷蔵庫 *reizōko*) |
-| 3 | 盘子 | pánzi | đĩa (ăn) | 皿 (JP: 皿 *sara*) |
-| 4 | 菜单 | càidān | thực đơn, menu | メニュー (JP: メニュー *menyū* — từ ngoại lai) |
-| 5 | 点菜 | diǎncài | gọi món | 注文する (JP: 注文 *chūmon*) |
-| 6 | 故事 | gùshì | câu chuyện | ⚠️ 故事 (JP: *cố sự, điển cố*; CN: *câu chuyện thông thường*) |
-| 7 | 节目 | jiémù | chương trình (TV, biểu diễn) | 番組 (JP: 番組 *bangumi*) |
-| 8 | 声音 | shēngyīn | âm thanh, giọng nói | 声 / 音 (JP: 声 *koe* = giọng; 音 *oto* = âm thanh) |
-| 9 | 香蕉 | xiāngjiāo | chuối | バナナ (JP: バナナ *banana*) |
-| 10 | 读音 | dúyīn | cách đọc, âm đọc | 読み方 (JP: 読み方 *yomikata*) |
-| 11 | 打扫 | dǎsǎo | quét dọn | 掃除する (JP: 掃除 *sōji*) |
-| 12 | 干净 | gānjìng | sạch sẽ | きれい / 清潔 (JP: 清潔 *seiketsu*) |
-| 13 | 先…然后 | xiān…ránhòu | trước tiên…sau đó | まず…それから (JP: まず *mazu*) |
-| 14 | 简单 | jiǎndān | đơn giản | 簡単 (JP: 簡単 *kantan* — cùng nghĩa ✓) |
+|---|------|--------|------------------|----------|
+| 1 | 希望 | xīwàng | hy vọng | 希望 (きぼう) — giống chữ và nghĩa ✅ |
+| 2 | 玩 | wán | chơi, vui chơi | 玩具 (おもちゃ) có chữ 玩 nhưng ít dùng độc lập làm động từ trong Nhật; Trung 玩 là động từ thông dụng |
+| 3 | 晴 | qíng | trời nắng/trong | 晴れ (はれ) — giống nghĩa ✅ |
 
 ---
 
-## 第15课 其他都没什么问题
+## 第15课 — 新年就要到了
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 其他 | qítā | những cái khác, ngoài ra | その他 (JP: その他 *sonota* — cùng nghĩa ✓) |
-| 2 | 除了…以外 | chúle…yǐwài | ngoài…ra | 〜以外に (JP: 〜以外に *igai ni* ✓) |
-| 3 | 水平 | shuǐpíng | trình độ, mức độ | ⚠️ 水平 (JP: *nằm ngang, thủy bình*; CN: *trình độ*) |
-| 4 | 留学 | liúxué | du học | 留学 (JP: 留学 *ryūgaku* — cùng nghĩa ✓) |
-| 5 | 上网 | shàngwǎng | lên mạng, kết nối internet | ネットをする (JP: ネット *netto*) |
-| 6 | 新闻 | xīnwén | tin tức, thời sự | ニュース (JP: ニュース *nyūsu* — từ ngoại lai) |
-| 7 | 花钱 | huāqián | tiêu tiền | お金を使う (JP: お金を使う) |
-| 8 | 提高 | tígāo | nâng cao, cải thiện | 向上させる (JP: 向上 *kōjō*) |
-| 9 | 极了 | jíle | cực kỳ, vô cùng (đứng sau tính từ) | とても / 〜すぎる (JP: 〜すぎる *sugiru*) |
-| 10 | 街道 | jiēdào | đường phố | 街道 (JP: 街道 *kaidō* — *đường lớn nối các vùng*; gần nghĩa) |
-| 11 | 影响 | yǐngxiǎng | ảnh hưởng | 影響 (JP: 影響 *eikyō* — cùng nghĩa ✓) |
-| 12 | 短期 | duǎnqī | ngắn hạn | 短期 (JP: 短期 *tanki* — cùng nghĩa ✓) |
-| 13 | 羊肉 | yángròu | thịt cừu, thịt dê | 羊肉 (JP: 羊肉 *yōniku* — cùng nghĩa ✓) |
+|---|------|--------|------------------|----------|
+| 1 | 上班 | shàngbān | đi làm | Nhật dùng 出勤 (しゅっきん); 上班 là cấu trúc động-tân riêng của Trung (上+班) |
+| 2 | 问题 | wèntí | vấn đề, câu hỏi | 問題 (もんだい) — giống chữ và nghĩa ✅ |
+| 3 | 阴 | yīn | (trời) âm u | 陰 (いん) — 阴 là thể giản của 陰; nghĩa "âm u (thời tiết)" hẹp hơn Nhật (thường nghĩa "bóng râm") |
+| 4 | 它 | tā | nó (đại từ cho vật/động vật) | Không có tương đương kanji riêng trong Nhật |
 
 ---
 
-## 第16课 我现在累得下了班就想睡觉
+## Bổ sung — Từ thuộc 150 từ HSK2 chính thức nhưng không xuất hiện trong phần nghe đã cung cấp
 
 | # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 累得 | lèi de | mệt đến mức… | 〜くて (JP: 〜すぎて / 〜くて) |
-| 2 | 城市 | chéngshì | thành phố | 都市 (JP: 都市 *toshi*; 城市 JP: không dùng) |
-| 3 | 如果…就 | rúguǒ…jiù | nếu…thì | もし〜なら / もし〜たら (JP: もし *moshi*) |
-| 4 | 皮鞋 | píxié | giày da | 革靴 (JP: 革靴 *kawagutsu*) |
-| 5 | 检查 | jiǎnchá | kiểm tra | 検査 (JP: 検査 *kensa* — cùng nghĩa ✓) |
-| 6 | 牙 | yá | răng | 歯 (JP: 歯 *ha*) |
-| 7 | 鼻子 | bízi | mũi | 鼻 (JP: 鼻 *hana* — cùng nghĩa ✓) |
-| 8 | 公斤 | gōngjīn | kilogram | キログラム (JP: キロ *kiro*) |
-| 9 | 头发 | tóufa | tóc | 髪 (JP: 髪 *kami*) |
-| 10 | 白白的 | báibái de | trắng trắng (trắng nõn) | 白い (JP: 白い *shiroi*) |
-| 11 | 高兴得 | gāoxìng de | vui đến mức… | 嬉しくて (JP: 嬉しくて) |
-| 12 | 秘书 | mìshū | thư ký | 秘書 (JP: 秘書 *hisho* — cùng nghĩa ✓) |
+|---|------|--------|------------------|----------|
+| 1 | 男人 | nánrén | nam giới, người đàn ông | 男 (おとこ) — giống nghĩa cơ bản ✅, 男人 là cấu trúc riêng của Trung |
+| 2 | 女人 | nǚrén | phụ nữ | 女 (おんな) — giống nghĩa cơ bản ✅, 女人 là cấu trúc riêng của Trung |
+| 3 | 姓 | xìng | họ (tên) | 姓 (せい/しょう) — giống nghĩa ✅ |
+| 4 | 船 | chuán | thuyền, tàu | 船 (ふね) — giống chữ và nghĩa ✅ |
+| 5 | 慢 | màn | chậm | ⚠️ Nhật 慢 (まん) thiên về "kiêu căng/lười biếng" (傲慢, 怠慢), Trung = "chậm" |
+| 6 | 快乐 | kuàilè | vui vẻ, hạnh phúc | ⚠️ Nhật 快楽 (かいらく) = "khoái lạc/hưởng thụ" (sắc thái mạnh hơn), Trung là từ chúc tụng thông thường (生日快乐) |
+| 7 | 回答 | huídá | trả lời | 回答 (かいとう) — giống chữ và nghĩa ✅ |
+| 8 | 欢迎 | huānyíng | hoan nghênh, chào mừng | 歓迎 (かんげい) — giống nghĩa, 欢(歡)≈歓 ✅ |
+| 9 | 此 | cǐ | này, đây (văn viết) | 此 (この/これ) — giống nghĩa, văn phong trang trọng ở cả hai ngôn ngữ |
+| 10 | 向 | xiàng | hướng về, về phía | 向く/向かう (むく/むかう) — giống nghĩa ✅ |
+| 11 | 千 | qiān | nghìn | 千 (せん) — giống nghĩa ✅ |
 
 ---
 
-## 第17课 谁都有办法看好你的"病"
+## ⚠️ Tổng hợp False Friends Trung–Nhật quan trọng nhất ở HSK2
 
-| # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 办法 | bànfǎ | cách, biện pháp | 方法 (JP: 方法 *hōhō*) |
-| 2 | 必须 | bìxū | phải, bắt buộc | 必ず / 〜なければならない (JP: 必ず *kanarazu*) |
-| 3 | 邻居 | línjū | hàng xóm | 隣人 / 近所 (JP: 近所 *kinjo*) |
-| 4 | 丈夫 | zhàngfu | chồng | ⚠️ 丈夫 (JP: *khỏe mạnh, chắc chắn*; CN: *chồng*) |
-| 5 | 渴 | kě | khát nước | 喉が渇く (JP: 喉が渇く *nodo ga kawaku*) |
-| 6 | 饱 | bǎo | no (bụng) | お腹がいっぱい (JP: お腹いっぱい) |
-| 7 | 为了 | wèile | vì, để (mục đích) | 〜のために (JP: 〜のために *no tame ni*) |
-| 8 | 决定 | juédìng | quyết định | 決定 (JP: 決定 *kettei* ✓) |
-| 9 | 根据 | gēnjù | dựa vào, căn cứ vào | 〜に基づいて (JP: 基づく *motozuku*) |
-| 10 | 举行 | jǔxíng | tổ chức (sự kiện) | 行う / 開催する (JP: 開催 *kaisai*) |
-| 11 | 锻炼 | duànliàn | luyện tập thể chất | 鍛える (JP: 鍛える *kitaeru*) |
-| 12 | 假 | jià | nghỉ phép, kỳ nghỉ | ⚠️ 仮 / 暇 (JP: 暇 *hima* = rảnh; 假 khác cách viết) |
-| 13 | 爱好 | àihào | sở thích | 趣味 (JP: 趣味 *shumi*) |
-| 14 | 冬天 | dōngtiān | mùa đông | 冬 (JP: 冬 *fuyu*) |
-
----
-
-## 第18课 我相信他们会同意的
-
-| # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 相信 | xiāngxìn | tin tưởng | 信じる (JP: 信じる *shinjiru*) |
-| 2 | 同意 | tóngyì | đồng ý | 同意 (JP: 同意 *dōi* — cùng nghĩa ✓) |
-| 3 | 机会 | jīhuì | cơ hội | 機会 (JP: 機会 *kikai* — cùng nghĩa ✓) |
-| 4 | 有名 | yǒumíng | nổi tiếng | 有名 (JP: 有名 *yūmei* — cùng nghĩa ✓) |
-| 5 | 不但…而且 | búdàn…érqiě | không những…mà còn | 〜だけでなく〜も (JP: cấu trúc tương đương) |
-| 6 | 只要…就 | zhǐyào…jiù | chỉ cần…là | 〜しさえすれば (JP: cấu trúc điều kiện) |
-| 7 | 动物 | dòngwù | động vật | 動物 (JP: 動物 *dōbutsu* — cùng nghĩa ✓) |
-| 8 | 动物园 | dòngwùyuán | vườn thú | 動物園 (JP: 動物園 *dōbutsuen* — cùng nghĩa ✓) |
-| 9 | 体育馆 | tǐyùguǎn | nhà thi đấu, sân vận động | 体育館 (JP: 体育館 *taiikukan* — cùng nghĩa ✓) |
-| 10 | 外地 | wàidì | nơi khác (không phải quê) | 他の地方 (JP: 地方 *chihō*) |
-| 11 | 段 | duàn | đoạn, khúc | 段 (JP: 段 *dan* — *bậc, tầng*; khác nghĩa) |
-| 12 | 奇怪 | qíguài | kỳ lạ, lạ | 奇妙 (JP: 奇妙 *kimyō*) |
-| 13 | 嘴 | zuǐ | miệng, mồm | 口 (JP: 口 *kuchi*) |
-| 14 | 关于 | guānyú | về (chủ đề), liên quan đến | 〜について (JP: 〜について *ni tsuite*) |
+| 汉字 | Nghĩa Trung | Nghĩa Nhật (kanji giống) | Mức độ rủi ro |
+|------|-------------|---------------------------|----------------|
+| 丈夫 | chồng | 丈夫 = khỏe mạnh/chắc chắn | ⚠️⚠️⚠️ Rất cao |
+| 非常 | rất | 非常 = khẩn cấp | ⚠️⚠️⚠️ Rất cao |
+| 走 | đi bộ | 走る = CHẠY | ⚠️⚠️⚠️ Rất cao |
+| 便宜 | rẻ | 便宜 = thuận tiện | ⚠️⚠️⚠️ Rất cao |
+| 颜色 | màu sắc | 顔色 = sắc mặt | ⚠️⚠️ Cao |
+| 告诉 | nói cho biết | 告訴 = khởi tố/kiện | ⚠️⚠️ Cao |
+| 帮助 | giúp đỡ | 幇助 = tội đồng phạm | ⚠️⚠️ Cao |
+| 累 | mệt | 累 = tích lũy/liên tiếp | ⚠️⚠️ Cao |
+| 大家 | mọi người | 大家 = chủ nhà cho thuê | ⚠️⚠️ Cao |
+| 介绍 | giới thiệu | 紹介 (thứ tự ngược) | ⚠️ Trung bình |
+| 意思 | ý nghĩa | 意思 = ý định/ý chí | ⚠️ Trung bình |
+| 让 | khiến/cho phép | 譲 = nhường nhịn | ⚠️ Trung bình |
+| 等 | chờ đợi | 等 = cấp độ/v.v... | ⚠️ Trung bình |
+| 别 | đừng | 別 = khác biệt | ⚠️ Trung bình |
+| 进 | vào | 進 = tiến triển (trừu tượng) | ⚠️ Nhẹ |
+| 贵 | đắt | 貴 = cao quý | ⚠️ Nhẹ |
+| 慢 | chậm | 慢 = kiêu/lười | ⚠️ Nhẹ |
 
 ---
 
-## 第19课 你没看出来吗
-
-| # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 看出来 | kàn chūlai | nhận ra, phát hiện qua quan sát | 見抜く / 気がつく (JP: 気がつく *ki ga tsuku*) |
-| 2 | 耳朵 | ěrduo | tai | 耳 (JP: 耳 *mimi* — cùng nghĩa ✓) |
-| 3 | 脸 | liǎn | mặt, khuôn mặt | 顔 (JP: 顔 *kao*) |
-| 4 | 经过 | jīngguò | đi qua, trải qua | 経由 / 通る (JP: 経由 *keiyu*) |
-| 5 | 骑马 | qímǎ | cưỡi ngựa | 馬に乗る (JP: 馬に乗る) |
-| 6 | 让…感到 | ràng…gǎndào | làm cho…cảm thấy | 〜させる (JP: 使役 *shieki*) |
-| 7 | 照相机 | zhàoxiàngjī | máy ảnh | カメラ (JP: カメラ *kamera*) |
-| 8 | 短 | duǎn | ngắn | 短い (JP: 短い *mijikai* — cùng nghĩa ✓) |
-| 9 | 蓝色 | lánsè | màu xanh lam | 青 / 藍色 (JP: 青 *ao*; 藍色 *aiiro*) |
-| 10 | 船 | chuán | tàu thuyền | 船 (JP: 船 *fune* — cùng nghĩa ✓) |
-| 11 | 糖 | táng | kẹo; đường | 飴 / 砂糖 (JP: 飴 *ame* = kẹo; 砂糖 *satō* = đường) |
-| 12 | 刷牙 | shuāyá | đánh răng | 歯を磨く (JP: 歯を磨く *ha wo migaku*) |
-| 13 | 脸色 | liǎnsè | sắc mặt | 顔色 (JP: 顔色 *kaoiro* — cùng nghĩa ✓) |
-| 14 | 想起来 | xiǎng qǐlai | nhớ lại, nhớ ra | 思い出す (JP: 思い出す *omoidasu*) |
-
----
-
-## 第20课 我被他影响了
-
-| # | 汉字 | Pinyin | Nghĩa tiếng Việt | Nhật ngữ |
-|---|------|--------|-------------------|----------|
-| 1 | 被 | bèi | bị (bị động cách) | 〜られる / に〜られる (JP: bị động thể *ukemi*) |
-| 2 | 照相机 | zhàoxiàngjī | máy ảnh | カメラ (JP: カメラ) |
-| 3 | 碗筷 | wǎnkuài | bát đũa | 茶碗と箸 (JP: dùng riêng từng từ) |
-| 4 | 信用卡 | xìnyòngkǎ | thẻ tín dụng | クレジットカード (JP: クレジットカード) |
-| 5 | 难过 | nánguò | buồn, đau lòng | 悲しい / つらい (JP: 悲しい *kanashii*) |
-| 6 | 关心 | guānxīn | quan tâm | 心配する / 気にかける (JP: 気にかける) |
-| 7 | 解决 | jiějué | giải quyết | 解決 (JP: 解決 *kaiketsu* — cùng nghĩa ✓) |
-| 8 | 只有…才 | zhǐyǒu…cái | chỉ có…mới | 〜しか〜ない / 〜てこそ (JP: 〜てこそ *te koso*) |
-| 9 | 成绩 | chéngjì | thành tích, điểm số | 成績 (JP: 成績 *seiseki* — cùng nghĩa ✓) |
-| 10 | 帽子 | màozi | mũ nón | 帽子 (JP: 帽子 *bōshi* — cùng nghĩa ✓) |
-| 11 | 房卡 | fángkǎ | thẻ phòng khách sạn | ルームカード (JP: ルームカード) |
-| 12 | 真正 | zhēnzhèng | thực sự, thật sự | 本当に / 真に (JP: 本当に *hontō ni*) |
-| 13 | 选择 | xuǎnzé | lựa chọn | 選択 (JP: 選択 *sentaku* — cùng nghĩa ✓) |
-| 14 | 东北 | dōngběi | đông bắc; Đông Bắc TQ | 東北 (JP: 東北 *tōhoku* — vùng Tōhoku Nhật Bản) |
-| 15 | 地图 | dìtú | bản đồ | 地図 (JP: 地図 *chizu* — cùng nghĩa ✓) |
-
----
-
-## Phụ lục: Tổng hợp ⚠️ False Friends quan trọng
-
-| 汉字 | Nghĩa tiếng Trung | Nghĩa tiếng Nhật | Ghi chú |
-|------|-------------------|-------------------|---------|
-| 经理 jīnglǐ | Giám đốc / quản lý | 経理 keirī = kế toán | Dễ nhầm nhất! |
-| 便宜 piányí | Rẻ (giá) | 便宜 bengi = tiện lợi | Khác hoàn toàn |
-| 作业 zuòyè | Bài tập về nhà | 作業 sagyō = công việc thao tác | Dễ nhầm |
-| 水平 shuǐpíng | Trình độ | 水平 suihei = nằm ngang | Khác nghĩa |
-| 丈夫 zhàngfu | Chồng | 丈夫 jōbu = khỏe mạnh | Khác hoàn toàn |
-| 故事 gùshì | Câu chuyện | 故事 koji = điển cố, tích xưa | Khác sắc thái |
-| 脚 jiǎo | Bàn chân | 脚 ashi = cả chân/chân bàn | Phạm vi khác |
-| 非常 fēicháng | Rất, vô cùng | 非常 hijō = khẩn cấp | Bài trước đã học |
+*Lưu ý: Danh sách "Bổ sung" gồm các từ thuộc 150 từ HSK2 chính thức nhưng không xuất hiện trong nội dung nghe đã gửi (file chỉ chứa phần Listening + 语音). Nếu có 生词表 thực tế của từng bài trong sách 标准教程 3, có thể đối chiếu chính xác hơn để xác định bài thực sự của một số từ.*
